@@ -1,0 +1,1227 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title></title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../lib/index.js"></script>
+      <script type="text/javascript" src="../../index.js"></script>
+      <script type="text/javascript" src="../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../';
+      </script>
+    
+        </head>
+        <body onload='/* Customizations for CS-A1110: */
+$("ol#linearization").find("li").each(function() { var name = $(this).attr("name"); var appStuff = ["scala.App","scala.DelayedInit","scala.swing.SimpleSwingApplication","scala.swing.Reactor","scala.swing.SwingApplication"];if ($.inArray(name, appStuff) > -1) { $(this).trigger("click");}});
+$("dl.paramcmts dd.cmt").css("margin-left", "140px");
+
+$("div#packages li.indented0").css("display", "none");
+'>
+      <div id="search">
+        <span id="doc-title"><span id="doc-version"></span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html">
+              <span class="name">root</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.smcl" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="smcl"></a><a id="smcl:smcl"></a>
+      <span class="permalink">
+      <a href="index.html#smcl" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../index.html">
+              <span class="name">smcl</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="smcl.settings" visbl="pub" class="indented2 current" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="settings"></a><a id="settings:settings"></a>
+      <span class="permalink">
+      <a href="../smcl/index.html#settings" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">settings</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="smcl">smcl</a></dd></dl></div>
+    </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="SettingRegisterer.html" title=""></a>
+                        <a href="SettingRegisterer.html" title="">
+                          SettingRegisterer
+                        </a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body onload='/* Customizations for CS-A1110: */
+$("ol#linearization").find("li").each(function() { var name = $(this).attr("name"); var appStuff = ["scala.App","scala.DelayedInit","scala.swing.SimpleSwingApplication","scala.swing.Reactor","scala.swing.SwingApplication"];if ($.inArray(name, appStuff) > -1) { $(this).trigger("click");}});
+$("dl.paramcmts dd.cmt").css("margin-left", "140px");
+
+$("div#packages li.indented0").css("display", "none");
+' class="package value">
+      <div id="definition">
+        <div class="big-circle package">p</div>
+        <p id="owner"><a href="../index.html" class="extype" name="smcl">smcl</a></p>
+        <h1>settings<span class="permalink">
+      <a href="../../smcl/settings/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">settings</span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><span class="extype" name="smcl.settings.SharedSettingDefinitions">SharedSettingDefinitions</span>, <span class="extype" name="smcl.settings.SettingRegistry">SettingRegistry</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="smcl.settings"><span>settings</span></li><li class="in" name="smcl.settings.SharedSettingDefinitions"><span>SharedSettingDefinitions</span></li><li class="in" name="smcl.settings.SettingRegistry"><span>SettingRegistry</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="smcl.settings.SettingRegistry.SettingMap" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SettingMap=Map[String,smcl.settings.Setting[_]]"></a><a id="SettingMap:SettingMap"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#SettingMap=Map[String,smcl.settings.Setting[_]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SettingMap</span><span class="result alias"> = <span class="extype" name="scala.collection.immutable.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="smcl.settings.Setting">Setting</span>[_]]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SettingRegistry</dd></dl></div>
+    </li><li name="smcl.settings.SettingRegistry.SettingRegisterer" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SettingRegistererextendsAnyRef"></a><a id="SettingRegisterer:SettingRegisterer"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#SettingRegistererextendsAnyRef" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SettingRegisterer</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SettingRegistry</dd></dl></div>
+    </li><li name="smcl.settings.SettingValidator" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SettingValidator[SettingDataType]=SettingDataType=&gt;Option[Throwable]"></a><a id="SettingValidator[SettingDataType]:SettingValidator[SettingDataType]"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#SettingValidator[SettingDataType]=SettingDataType=&gt;Option[Throwable]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SettingValidator</span><span class="tparams">[<span name="SettingDataType">SettingDataType</span>]</span><span class="result alias"> = (<span class="extype" name="smcl.settings.SettingValidator.SettingDataType">SettingDataType</span>) ⇒ <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Throwable">Throwable</span>]</span>
+      </span>
+      
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="smcl.settings.SharedSettingDefinitions#BitmapHeightWarningLimitInPixels" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BitmapHeightWarningLimitInPixels:Int"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#BitmapHeightWarningLimitInPixels:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">BitmapHeightWarningLimitInPixels</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#BitmapHeightWarningLimitInPixels_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BitmapHeightWarningLimitInPixels_=(newValue:Int):Unit"></a><a id="BitmapHeightWarningLimitInPixels_=(Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#BitmapHeightWarningLimitInPixels_=(newValue:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: BitmapHeightWarningLimitInPixels_$eq" class="name">BitmapHeightWarningLimitInPixels_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#BitmapWidthWarningLimitInPixels" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BitmapWidthWarningLimitInPixels:Int"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#BitmapWidthWarningLimitInPixels:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">BitmapWidthWarningLimitInPixels</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#BitmapWidthWarningLimitInPixels_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BitmapWidthWarningLimitInPixels_=(newValue:Int):Unit"></a><a id="BitmapWidthWarningLimitInPixels_=(Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#BitmapWidthWarningLimitInPixels_=(newValue:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: BitmapWidthWarningLimitInPixels_$eq" class="name">BitmapWidthWarningLimitInPixels_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#BitmapsAreDisplayedAutomaticallyAfterOperations" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BitmapsAreDisplayedAutomaticallyAfterOperations:Boolean"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#BitmapsAreDisplayedAutomaticallyAfterOperations:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">BitmapsAreDisplayedAutomaticallyAfterOperations</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#BitmapsAreDisplayedAutomaticallyAfterOperations_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BitmapsAreDisplayedAutomaticallyAfterOperations_=(newValue:Boolean):Unit"></a><a id="BitmapsAreDisplayedAutomaticallyAfterOperations_=(Boolean):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#BitmapsAreDisplayedAutomaticallyAfterOperations_=(newValue:Boolean):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: BitmapsAreDisplayedAutomaticallyAfterOperations_$eq" class="name">BitmapsAreDisplayedAutomaticallyAfterOperations_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#BorderNotFillShapesByDefault" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BorderNotFillShapesByDefault():Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#BorderNotFillShapesByDefault():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">BorderNotFillShapesByDefault</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#BorderShapesByDefault" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BorderShapesByDefault():Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#BorderShapesByDefault():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">BorderShapesByDefault</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#CanvasesAreResizedBasedOnTransformations" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CanvasesAreResizedBasedOnTransformations:Boolean"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#CanvasesAreResizedBasedOnTransformations:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CanvasesAreResizedBasedOnTransformations</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#CanvasesAreResizedBasedOnTransformations_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="CanvasesAreResizedBasedOnTransformations_=(newValue:Boolean):Unit"></a><a id="CanvasesAreResizedBasedOnTransformations_=(Boolean):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#CanvasesAreResizedBasedOnTransformations_=(newValue:Boolean):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: CanvasesAreResizedBasedOnTransformations_$eq" class="name">CanvasesAreResizedBasedOnTransformations_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#ColorVisualizationTileSideLengthInPixels" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ColorVisualizationTileSideLengthInPixels:Int"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#ColorVisualizationTileSideLengthInPixels:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ColorVisualizationTileSideLengthInPixels</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#ColorVisualizationTileSideLengthInPixels_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ColorVisualizationTileSideLengthInPixels_=(newValue:Int):Unit"></a><a id="ColorVisualizationTileSideLengthInPixels_=(Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#ColorVisualizationTileSideLengthInPixels_=(newValue:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: ColorVisualizationTileSideLengthInPixels_$eq" class="name">ColorVisualizationTileSideLengthInPixels_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultArcAngleInDegrees" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultArcAngleInDegrees:Int"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultArcAngleInDegrees:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultArcAngleInDegrees</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultArcAngleInDegrees_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultArcAngleInDegrees_=(newValue:Int):Unit"></a><a id="DefaultArcAngleInDegrees_=(Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultArcAngleInDegrees_=(newValue:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: DefaultArcAngleInDegrees_$eq" class="name">DefaultArcAngleInDegrees_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultArcStartAngleInDegrees" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultArcStartAngleInDegrees:Int"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultArcStartAngleInDegrees:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultArcStartAngleInDegrees</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultArcStartAngleInDegrees_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultArcStartAngleInDegrees_=(newValue:Int):Unit"></a><a id="DefaultArcStartAngleInDegrees_=(Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultArcStartAngleInDegrees_=(newValue:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: DefaultArcStartAngleInDegrees_$eq" class="name">DefaultArcStartAngleInDegrees_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultBackgroundColor" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultBackgroundColor:smcl.colors.rgb.Color"></a><a id="DefaultBackgroundColor:Color"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultBackgroundColor:smcl.colors.rgb.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultBackgroundColor</span><span class="result">: <span class="extype" name="smcl.colors.rgb.Color">Color</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultBackgroundColor_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultBackgroundColor_=(newValue:smcl.colors.rgb.Color):Unit"></a><a id="DefaultBackgroundColor_=(Color):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultBackgroundColor_=(newValue:smcl.colors.rgb.Color):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: DefaultBackgroundColor_$eq" class="name">DefaultBackgroundColor_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="smcl.colors.rgb.Color">Color</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultBitmapHeightInPixels" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultBitmapHeightInPixels:Int"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultBitmapHeightInPixels:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultBitmapHeightInPixels</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultBitmapHeightInPixels_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultBitmapHeightInPixels_=(newValue:Int):Unit"></a><a id="DefaultBitmapHeightInPixels_=(Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultBitmapHeightInPixels_=(newValue:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: DefaultBitmapHeightInPixels_$eq" class="name">DefaultBitmapHeightInPixels_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultBitmapWidthInPixels" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultBitmapWidthInPixels:Int"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultBitmapWidthInPixels:Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultBitmapWidthInPixels</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultBitmapWidthInPixels_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultBitmapWidthInPixels_=(newValue:Int):Unit"></a><a id="DefaultBitmapWidthInPixels_=(Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultBitmapWidthInPixels_=(newValue:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: DefaultBitmapWidthInPixels_$eq" class="name">DefaultBitmapWidthInPixels_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultCircleRadiusInPixels" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultCircleRadiusInPixels:Double"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultCircleRadiusInPixels:Double" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultCircleRadiusInPixels</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultCircleRadiusInPixels_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultCircleRadiusInPixels_=(newValue:Double):Unit"></a><a id="DefaultCircleRadiusInPixels_=(Double):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultCircleRadiusInPixels_=(newValue:Double):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: DefaultCircleRadiusInPixels_$eq" class="name">DefaultCircleRadiusInPixels_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultHorizontalAlignment" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultHorizontalAlignment:smcl.settings.HorizontalAlignment"></a><a id="DefaultHorizontalAlignment:HorizontalAlignment"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultHorizontalAlignment:smcl.settings.HorizontalAlignment" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultHorizontalAlignment</span><span class="result">: <span class="extype" name="smcl.settings.HorizontalAlignment">HorizontalAlignment</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultHorizontalAlignment_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultHorizontalAlignment_=(newValue:smcl.settings.HorizontalAlignment):Unit"></a><a id="DefaultHorizontalAlignment_=(HorizontalAlignment):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultHorizontalAlignment_=(newValue:smcl.settings.HorizontalAlignment):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: DefaultHorizontalAlignment_$eq" class="name">DefaultHorizontalAlignment_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="smcl.settings.HorizontalAlignment">HorizontalAlignment</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultPaddingInPixels" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultPaddingInPixels:Double"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultPaddingInPixels:Double" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultPaddingInPixels</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultPaddingInPixels_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultPaddingInPixels_=(newValue:Double):Unit"></a><a id="DefaultPaddingInPixels_=(Double):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultPaddingInPixels_=(newValue:Double):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: DefaultPaddingInPixels_$eq" class="name">DefaultPaddingInPixels_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultPositionType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultPositionType:smcl.settings.PositionType"></a><a id="DefaultPositionType:PositionType"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultPositionType:smcl.settings.PositionType" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultPositionType</span><span class="result">: <span class="extype" name="smcl.settings.PositionType">PositionType</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultPositionType_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultPositionType_=(newValue:smcl.settings.PositionType):Unit"></a><a id="DefaultPositionType_=(PositionType):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultPositionType_=(newValue:smcl.settings.PositionType):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: DefaultPositionType_$eq" class="name">DefaultPositionType_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="smcl.settings.PositionType">PositionType</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultPrimaryColor" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultPrimaryColor:smcl.colors.rgb.Color"></a><a id="DefaultPrimaryColor:Color"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultPrimaryColor:smcl.colors.rgb.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultPrimaryColor</span><span class="result">: <span class="extype" name="smcl.colors.rgb.Color">Color</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultPrimaryColor_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultPrimaryColor_=(newValue:smcl.colors.rgb.Color):Unit"></a><a id="DefaultPrimaryColor_=(Color):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultPrimaryColor_=(newValue:smcl.colors.rgb.Color):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: DefaultPrimaryColor_$eq" class="name">DefaultPrimaryColor_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="smcl.colors.rgb.Color">Color</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultRoundingHeightInPixels" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultRoundingHeightInPixels:Double"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultRoundingHeightInPixels:Double" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultRoundingHeightInPixels</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultRoundingHeightInPixels_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultRoundingHeightInPixels_=(newValue:Double):Unit"></a><a id="DefaultRoundingHeightInPixels_=(Double):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultRoundingHeightInPixels_=(newValue:Double):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: DefaultRoundingHeightInPixels_$eq" class="name">DefaultRoundingHeightInPixels_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultRoundingWidthInPixels" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultRoundingWidthInPixels:Double"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultRoundingWidthInPixels:Double" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultRoundingWidthInPixels</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultRoundingWidthInPixels_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultRoundingWidthInPixels_=(newValue:Double):Unit"></a><a id="DefaultRoundingWidthInPixels_=(Double):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultRoundingWidthInPixels_=(newValue:Double):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: DefaultRoundingWidthInPixels_$eq" class="name">DefaultRoundingWidthInPixels_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultSecondaryColor" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultSecondaryColor:smcl.colors.rgb.Color"></a><a id="DefaultSecondaryColor:Color"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultSecondaryColor:smcl.colors.rgb.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultSecondaryColor</span><span class="result">: <span class="extype" name="smcl.colors.rgb.Color">Color</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultSecondaryColor_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultSecondaryColor_=(newValue:smcl.colors.rgb.Color):Unit"></a><a id="DefaultSecondaryColor_=(Color):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultSecondaryColor_=(newValue:smcl.colors.rgb.Color):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: DefaultSecondaryColor_$eq" class="name">DefaultSecondaryColor_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="smcl.colors.rgb.Color">Color</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultStarCuspRadiusInPixels" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultStarCuspRadiusInPixels:Double"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultStarCuspRadiusInPixels:Double" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultStarCuspRadiusInPixels</span><span class="result">: <span class="extype" name="scala.Double">Double</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultStarCuspRadiusInPixels_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultStarCuspRadiusInPixels_=(newValue:Double):Unit"></a><a id="DefaultStarCuspRadiusInPixels_=(Double):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultStarCuspRadiusInPixels_=(newValue:Double):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: DefaultStarCuspRadiusInPixels_$eq" class="name">DefaultStarCuspRadiusInPixels_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultVerticalAlignment" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultVerticalAlignment:smcl.settings.VerticalAlignment"></a><a id="DefaultVerticalAlignment:VerticalAlignment"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultVerticalAlignment:smcl.settings.VerticalAlignment" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DefaultVerticalAlignment</span><span class="result">: <span class="extype" name="smcl.settings.VerticalAlignment">VerticalAlignment</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DefaultVerticalAlignment_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DefaultVerticalAlignment_=(newValue:smcl.settings.VerticalAlignment):Unit"></a><a id="DefaultVerticalAlignment_=(VerticalAlignment):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DefaultVerticalAlignment_=(newValue:smcl.settings.VerticalAlignment):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: DefaultVerticalAlignment_$eq" class="name">DefaultVerticalAlignment_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="smcl.settings.VerticalAlignment">VerticalAlignment</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DisplayBitmapsAutomaticallyAfterOperations" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DisplayBitmapsAutomaticallyAfterOperations():Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DisplayBitmapsAutomaticallyAfterOperations():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DisplayBitmapsAutomaticallyAfterOperations</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DisplayNewBitmapsAutomatically" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DisplayNewBitmapsAutomatically():Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DisplayNewBitmapsAutomatically():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DisplayNewBitmapsAutomatically</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DoNotDisplayBitmapsAutomaticallyAfterOperations" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DoNotDisplayBitmapsAutomaticallyAfterOperations():Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DoNotDisplayBitmapsAutomaticallyAfterOperations():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DoNotDisplayBitmapsAutomaticallyAfterOperations</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DoNotDisplayNewBitmapsAutomatically" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DoNotDisplayNewBitmapsAutomatically():Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DoNotDisplayNewBitmapsAutomatically():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DoNotDisplayNewBitmapsAutomatically</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DoNotFillShapesByDefault" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DoNotFillShapesByDefault():Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DoNotFillShapesByDefault():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DoNotFillShapesByDefault</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#DoNotResizeCanvasesBasedOnTransformations" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DoNotResizeCanvasesBasedOnTransformations():Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#DoNotResizeCanvasesBasedOnTransformations():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DoNotResizeCanvasesBasedOnTransformations</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#FillShapesByDefault" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FillShapesByDefault():Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#FillShapesByDefault():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FillShapesByDefault</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#NewBitmapsAreDisplayedAutomatically" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NewBitmapsAreDisplayedAutomatically:Boolean"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#NewBitmapsAreDisplayedAutomatically:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NewBitmapsAreDisplayedAutomatically</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#NewBitmapsAreDisplayedAutomatically_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NewBitmapsAreDisplayedAutomatically_=(newValue:Boolean):Unit"></a><a id="NewBitmapsAreDisplayedAutomatically_=(Boolean):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#NewBitmapsAreDisplayedAutomatically_=(newValue:Boolean):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: NewBitmapsAreDisplayedAutomatically_$eq" class="name">NewBitmapsAreDisplayedAutomatically_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#ResizeCanvasesBasedOnTransformations" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ResizeCanvasesBasedOnTransformations():Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#ResizeCanvasesBasedOnTransformations():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ResizeCanvasesBasedOnTransformations</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings#SettingMapWrapper" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SettingMapWrapper(self:smcl.settings.package.SettingMap):smcl.settings.RichSettingMap"></a><a id="SettingMapWrapper(SettingMap):RichSettingMap"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#SettingMapWrapper(self:smcl.settings.package.SettingMap):smcl.settings.RichSettingMap" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SettingMapWrapper</span><span class="params">(<span name="self">self: <a href="#SettingMap=Map[String,smcl.settings.Setting[_]]" class="extmbr" name="smcl.settings.SettingMap">SettingMap</a></span>)</span><span class="result">: <span class="extype" name="smcl.settings.RichSettingMap">RichSettingMap</span></span>
+      </span>
+      
+      
+    </li><li name="smcl.settings.SettingRegistry#Settings" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Settings:SettingRegistry.this.SettingMap"></a><a id="Settings:SettingMap"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#Settings:SettingRegistry.this.SettingMap" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Settings</span><span class="result">: <a href="#SettingMap=Map[String,smcl.settings.Setting[_]]" class="extmbr" name="smcl.settings.SettingMap">SettingMap</a></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SettingRegistry</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#ShapesHaveBordersByDefault" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ShapesHaveBordersByDefault:Boolean"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#ShapesHaveBordersByDefault:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ShapesHaveBordersByDefault</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#ShapesHaveBordersByDefault_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ShapesHaveBordersByDefault_=(newValue:Boolean):Unit"></a><a id="ShapesHaveBordersByDefault_=(Boolean):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#ShapesHaveBordersByDefault_=(newValue:Boolean):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: ShapesHaveBordersByDefault_$eq" class="name">ShapesHaveBordersByDefault_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#ShapesHaveFillingsByDefault" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ShapesHaveFillingsByDefault:Boolean"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#ShapesHaveFillingsByDefault:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ShapesHaveFillingsByDefault</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li><li name="smcl.settings.SharedSettingDefinitions#ShapesHaveFillingsByDefault_=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ShapesHaveFillingsByDefault_=(newValue:Boolean):Unit"></a><a id="ShapesHaveFillingsByDefault_=(Boolean):Unit"></a>
+      <span class="permalink">
+      <a href="../../smcl/settings/index.html#ShapesHaveFillingsByDefault_=(newValue:Boolean):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: ShapesHaveFillingsByDefault_$eq" class="name">ShapesHaveFillingsByDefault_=</span><span class="params">(<span name="newValue">newValue: <span class="extype" name="scala.Boolean">Boolean</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>SharedSettingDefinitions</dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="smcl.settings.SharedSettingDefinitions">
+              <h3>Inherited from <span class="extype" name="smcl.settings.SharedSettingDefinitions">SharedSettingDefinitions</span></h3>
+            </div><div class="parent" name="smcl.settings.SettingRegistry">
+              <h3>Inherited from <span class="extype" name="smcl.settings.SettingRegistry">SettingRegistry</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer"> This document is part of the ebook for O1 (a.k.a. CS-A1110 Programming 1), a course at Aalto University. </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

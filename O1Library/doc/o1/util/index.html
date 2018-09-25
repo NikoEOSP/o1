@@ -1,0 +1,882 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title></title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../lib/index.js"></script>
+      <script type="text/javascript" src="../../index.js"></script>
+      <script type="text/javascript" src="../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../';
+      </script>
+    
+        </head>
+        <body onload='/* Customizations for CS-A1110: */
+$("ol#linearization").find("li").each(function() { var name = $(this).attr("name"); var appStuff = ["scala.App","scala.DelayedInit","scala.swing.SimpleSwingApplication","scala.swing.Reactor","scala.swing.SwingApplication"];if ($.inArray(name, appStuff) > -1) { $(this).trigger("click");}});
+$("dl.paramcmts dd.cmt").css("margin-left", "140px");
+
+$("div#packages li.indented0").css("display", "none");
+'>
+      <div id="search">
+        <span id="doc-title"><span id="doc-version"></span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html">
+              <span class="name">root</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.o1" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="o1"></a><a id="o1:o1"></a>
+      <span class="permalink">
+      <a href="index.html#o1" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="O1Library is a toolkit designed for the course Programming 1 (a.k.a. O1) at Aalto University." href="../index.html">
+              <span class="name">o1</span>
+            </a>
+      </span>
+      
+      <p class="shortcomment cmt"><b>O1Library</b> is a toolkit designed for the course <a href="https://plus.cs.hut.fi/o1/2018/" target="_blank">Programming 1 (a.k.a. O1)</a> at Aalto University.</p><div class="fullcomment"><div class="comment cmt"><p><b>O1Library</b> is a toolkit designed for the course <a href="https://plus.cs.hut.fi/o1/2018/" target="_blank">Programming 1 (a.k.a. O1)</a> at Aalto University. It contains an assortment of tools;
+ most prominently, it provides a framework for simple graphical programming and utilities
+ for playing sound.</p><p>This is the front page of O1Library’s documentation. However, this is probably not the best
+place to start learning about O1Library as a student. That’s because the relevant content
+of this library is introduced bit by bit in the chapters of O1’s custom ebook alongside the
+relevant programming concepts and related assignments.</p><p>You may still find this documentation useful as a reference. You can also find some
+optional content here that you may wish to try.</p><p>This front page lists the content available in the top-level package called simply <code>o1</code>.
+These tools are available with the simple command <code>import o1._</code> in your Scala programs.
+Some of them you’ll use a lot; some of them you won’t necessarily need at all.</p><p>The tools listed here are actually implemented in a number of subpackages (<code>o1.gui</code>,
+<code>o1.sound</code>, etc.); what you see here are just “shortcut aliases” to those actual
+implementations. The aliases are here to make that convenient <code>import</code> command work and to
+provide you with this list of links to some of the more commonly used tools in O1Library.
+The subpackages also contain additional content not listed here.</p><p>O1Library has been developed by Aleksi Lukkarinen and Juha Sorva. Several of the key
+components in <code>o1.gui</code> and <code>o1.world</code> are built upon Aleksi’s
+<a href="https://github.com/Aalto-LeTech/Scala-Media-Computation" target="_blank">Scala Media Computation Library</a>.
+Some parts of O1Library draw inspiration from the “teachpacks” designed for the Racket
+programming language.</p><p>We thank Riku Autio and Juhani Numminen for bug reports and fixes and Otto Seppälä for
+discussions.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="o1.grid" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="grid"></a><a id="grid:grid"></a>
+      <span class="permalink">
+      <a href="../o1/index.html#grid" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="This package contains tools for working with grid-like two-dimensional structures." href="../grid/index.html">
+              <span class="name">grid</span>
+            </a>
+      </span>
+      
+      <p class="shortcomment cmt">This package contains tools for working with grid-like two-dimensional structures.</p><div class="fullcomment"><div class="comment cmt"><p>This package contains tools for working with grid-like two-dimensional structures.</p><p>The contents of this package have aliases in the top-level package <a href="../index.html" class="extype" name="o1">o1</a>, so they
+are accessible to students simply via <code>import o1._</code>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="o1">o1</a></dd></dl></div>
+    </li><li name="o1.gui" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="gui"></a><a id="gui:gui"></a>
+      <span class="permalink">
+      <a href="../o1/index.html#gui" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="This package contains tools for building simple GUIs." href="../gui/index.html">
+              <span class="name">gui</span>
+            </a>
+      </span>
+      
+      <p class="shortcomment cmt">This package contains tools for building simple GUIs.</p><div class="fullcomment"><div class="comment cmt"><p>This package contains tools for building simple GUIs. The toolkit is particularly well suited
+to constructing GUIs that display information as loaded 2D images and/or geometric shapes.
+It is not designed for demanding graphical needs that call for high efficiency. Some of the
+tools in this package are built on the Swing GUI library, and the two libraries can be used in
+combination.</p><p>Some of the types in this package have aliases in the top-level package <a href="../index.html" class="extype" name="o1">o1</a>, so they are
+accessible to students simply via <code>import o1._</code>. Some of the package contents are not available
+in the top-level package and/or and included in this documentation.</p><p><b>Please note:</b> One of the key components of this package (views) comes in multiple varieties,
+which are defined in the <a href="../gui/mutable$.html" class="extype" name="o1.gui.mutable">mutable</a> and <a href="../gui/immutable$.html" class="extype" name="o1.gui.immutable">immutable</a> subpackages and not listed below. The
+<code>View</code> that is most commonly used in O1 (and aliased as <code>o1.View</code> in the top-level package) is
+<a href="../gui/mutable$$ViewFrame.html" class="extype" name="o1.gui.mutable.ViewFrame">o1.gui.mutable.ViewFrame</a>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="o1">o1</a></dd></dl></div>
+    </li><li name="o1.sound" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sound"></a><a id="sound:sound"></a>
+      <span class="permalink">
+      <a href="../o1/index.html#sound" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="Please see one of the two subpackages:" href="../sound/index.html">
+              <span class="name">sound</span>
+            </a>
+      </span>
+      
+      <p class="shortcomment cmt">Please see one of the two subpackages:</p><div class="fullcomment"><div class="comment cmt"><p>Please see one of the two subpackages:</p><ul><li><a href="../sound/midi/index.html" class="extype" name="o1.sound.midi">o1.sound.midi</a> for MIDI sound described in terms of notes,
+   instruments, and other directives</li><li><a href="../sound/sampled/index.html" class="extype" name="o1.sound.sampled">o1.sound.sampled</a> for working with recorded sound samples.</li></ul></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="o1">o1</a></dd></dl></div>
+    </li><li name="o1.util" visbl="pub" class="indented2 current" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="util"></a><a id="util:util"></a>
+      <span class="permalink">
+      <a href="../o1/index.html#util" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">util</span>
+      </span>
+      
+      <p class="shortcomment cmt">The package <code>o1.util</code> contains miscellaneous tools that are used internally by some of the
+given programs in O1 for added convenience.</p><div class="fullcomment"><div class="comment cmt"><p>The package <code>o1.util</code> contains miscellaneous tools that are used internally by some of the
+given programs in O1 for added convenience.</p><p><b>NOTE TO STUDENTS: In this course, you don't need to understand how this package works
+or can be used.</b></p><p>This documentation lists only some of the tools in the package. The listed tools are largely
+a mix of:</p><ul><li>functions for simple I/O from files and URLs;</li><li>aliases for easy access (via <code>import o1.util._</code>)
+   to some of the tools from <code>scala.util</code>; and</li><li>implicit classes that add a few convenience methods
+   to selected types from the Scala API.</li></ul></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="o1">o1</a></dd></dl></div>
+    </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="package$$ConvenientCollection.html" title="This class extends the interface of scala.Traversable with convenience methods."></a>
+                        <a href="package$$ConvenientCollection.html" title="This class extends the interface of scala.Traversable with convenience methods.">
+                          ConvenientCollection
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="package$$ConvenientDouble.html" title="This class extends the interface of Double with convenience methods."></a>
+                        <a href="package$$ConvenientDouble.html" title="This class extends the interface of Double with convenience methods.">
+                          ConvenientDouble
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="package$$ConvenientFloat.html" title="This class extends the interface of Float with convenience methods."></a>
+                        <a href="package$$ConvenientFloat.html" title="This class extends the interface of Float with convenience methods.">
+                          ConvenientFloat
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="package$$ConvenientInt.html" title="This class extends the interface of Int with convenience methods."></a>
+                        <a href="package$$ConvenientInt.html" title="This class extends the interface of Int with convenience methods.">
+                          ConvenientInt
+                        </a>
+                      </li><li class="current-entities indented2">
+                        <span class="separator"></span>
+                        <a class="class" href="package$$ConvenientLong.html" title="This class extends the interface of Long with convenience methods."></a>
+                        <a href="package$$ConvenientLong.html" title="This class extends the interface of Long with convenience methods.">
+                          ConvenientLong
+                        </a>
+                      </li><li name="o1.world" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="world"></a><a id="world:world"></a>
+      <span class="permalink">
+      <a href="../o1/index.html#world" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="This package contains tools for locations and movement in two-dimensional space." href="../world/index.html">
+              <span class="name">world</span>
+            </a>
+      </span>
+      
+      <p class="shortcomment cmt">This package contains tools for locations and movement in two-dimensional space.</p><div class="fullcomment"><div class="comment cmt"><p>This package contains tools for locations and movement in two-dimensional space.</p><p>The tools in this package have aliases in the top-level package <a href="../index.html" class="extype" name="o1">o1</a>, so they are accessible
+to students simply via <code>import o1._</code>.</p><p>The subpackage <a href="../world/objects/index.html" class="extype" name="o1.world.objects">o1.world.objects</a> contains additional tools for representing
+entities that reside within two-dimensional spaces.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="o1">o1</a></dd></dl></div>
+    </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body onload='/* Customizations for CS-A1110: */
+$("ol#linearization").find("li").each(function() { var name = $(this).attr("name"); var appStuff = ["scala.App","scala.DelayedInit","scala.swing.SimpleSwingApplication","scala.swing.Reactor","scala.swing.SwingApplication"];if ($.inArray(name, appStuff) > -1) { $(this).trigger("click");}});
+$("dl.paramcmts dd.cmt").css("margin-left", "140px");
+
+$("div#packages li.indented0").css("display", "none");
+' class="package value">
+      <div id="definition">
+        <div class="big-circle package">p</div>
+        <p id="owner"><a href="../index.html" class="extype" name="o1">o1</a></p>
+        <h1>util<span class="permalink">
+      <a href="../../o1/util/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">util</span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>The package <code>o1.util</code> contains miscellaneous tools that are used internally by some of the
+given programs in O1 for added convenience.</p><p><b>NOTE TO STUDENTS: In this course, you don't need to understand how this package works
+or can be used.</b></p><p>This documentation lists only some of the tools in the package. The listed tools are largely
+a mix of:</p><ul><li>functions for simple I/O from files and URLs;</li><li>aliases for easy access (via <code>import o1.util._</code>)
+   to some of the tools from <code>scala.util</code>; and</li><li>implicit classes that add a few convenience methods
+   to selected types from the Scala API.</li></ul></div><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><span class="extype" name="o1.util.iofuncs">iofuncs</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="o1.util"><span>util</span></li><li class="in" name="o1.util.iofuncs"><span>iofuncs</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="o1.util.iofuncs.Closeable" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Closeable=AnyRef{defclose():Unit}"></a><a id="Closeable:Closeable"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#Closeable=AnyRef{defclose():Unit}" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Closeable</span><span class="result alias"> = <span class="extype" name="scala.AnyRef">AnyRef</span> { def close(): Unit }</span>
+      </span>
+      
+      <p class="shortcomment cmt">A structural supertype for everything that has a <code>close</code> method.</p><div class="fullcomment"><div class="comment cmt"><p>A structural supertype for everything that has a <code>close</code> method.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>iofuncs</dd><dt>See also</dt><dd><span class="cmt"><p><a href="#useAndClose[Resource&lt;:iofuncs.this.Closeable,Result](resource:Resource)(operation:Resource=&gt;Result):Result" class="extmbr" name="o1.util#useAndClose">useAndClose</a></p></span></dd></dl></div>
+    </li><li name="o1.util.ConvenientCollection" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConvenientCollection[Element]extendsAnyVal"></a><a id="ConvenientCollection[Element]:ConvenientCollection[Element]"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#ConvenientCollection[Element]extendsAnyVal" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="This class extends the interface of scala.Traversable with convenience methods." href="package$$ConvenientCollection.html">
+              <span class="name">ConvenientCollection</span>
+            </a><span class="tparams">[<span name="Element">Element</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyVal">AnyVal</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">This class extends the interface of <code>scala.Traversable</code> with convenience methods.</p>
+    </li><li name="o1.util.ConvenientDouble" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConvenientDoubleextendsAnyVal"></a><a id="ConvenientDouble:ConvenientDouble"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#ConvenientDoubleextendsAnyVal" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="This class extends the interface of Double with convenience methods." href="package$$ConvenientDouble.html">
+              <span class="name">ConvenientDouble</span>
+            </a><span class="result"> extends <span class="extype" name="scala.AnyVal">AnyVal</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">This class extends the interface of <code>Double</code> with convenience methods.</p>
+    </li><li name="o1.util.ConvenientFloat" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConvenientFloatextendsAnyVal"></a><a id="ConvenientFloat:ConvenientFloat"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#ConvenientFloatextendsAnyVal" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="This class extends the interface of Float with convenience methods." href="package$$ConvenientFloat.html">
+              <span class="name">ConvenientFloat</span>
+            </a><span class="result"> extends <span class="extype" name="scala.AnyVal">AnyVal</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">This class extends the interface of <code>Float</code> with convenience methods.</p>
+    </li><li name="o1.util.ConvenientInt" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConvenientIntextendsAnyVal"></a><a id="ConvenientInt:ConvenientInt"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#ConvenientIntextendsAnyVal" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="This class extends the interface of Int with convenience methods." href="package$$ConvenientInt.html">
+              <span class="name">ConvenientInt</span>
+            </a><span class="result"> extends <span class="extype" name="scala.AnyVal">AnyVal</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">This class extends the interface of <code>Int</code> with convenience methods.</p>
+    </li><li name="o1.util.ConvenientLong" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ConvenientLongextendsAnyVal"></a><a id="ConvenientLong:ConvenientLong"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#ConvenientLongextendsAnyVal" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">implicit final </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a title="This class extends the interface of Long with convenience methods." href="package$$ConvenientLong.html">
+              <span class="name">ConvenientLong</span>
+            </a><span class="result"> extends <span class="extype" name="scala.AnyVal">AnyVal</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">This class extends the interface of <code>Long</code> with convenience methods.</p>
+    </li><li name="o1.util.Failure" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Failure[T]=scala.util.Failure[T]"></a><a id="Failure[T]:Failure[T]"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#Failure[T]=scala.util.Failure[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Failure</span><span class="tparams">[<span name="T">T</span>]</span><span class="result alias"> = <span class="extype" name="scala.util.Failure"><a href="https://www.scala-lang.org/api/current/scala/util/Failure.html">scala.util.Failure</a></span>[<span class="extype" name="o1.util.Failure.T">T</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">An alias for convenient use of <code>scala.util.Try</code> via <code>import o1.util._</code>.</p>
+    </li><li name="o1.util.File" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="File=java.io.File"></a><a id="File:File"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#File=java.io.File" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">File</span><span class="result alias"> = <span class="extype" name="java.io.File">java.io.File</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">An alias for convenient use of <code>java.io.File</code> via <code>import o1.util._</code>.</p>
+    </li><li name="o1.util.Random" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Random=scala.util.Random"></a><a id="Random:Random"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#Random=scala.util.Random" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Random</span><span class="result alias"> = <span class="extype" name="scala.util.Random"><a href="https://www.scala-lang.org/api/current/scala/util/Random.html">scala.util.Random</a></span></span>
+      </span>
+      
+      <p class="shortcomment cmt">An alias for convenient use of <code>scala.util.Random</code> via <code>import o1.util._</code>.</p>
+    </li><li name="o1.util.Success" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Success[T]=scala.util.Success[T]"></a><a id="Success[T]:Success[T]"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#Success[T]=scala.util.Success[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Success</span><span class="tparams">[<span name="T">T</span>]</span><span class="result alias"> = <span class="extype" name="scala.util.Success"><a href="https://www.scala-lang.org/api/current/scala/util/Success.html">scala.util.Success</a></span>[<span class="extype" name="o1.util.Success.T">T</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">An alias for convenient use of <code>scala.util.Try</code> via <code>import o1.util._</code>.</p>
+    </li><li name="o1.util.Try" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Try[T]=scala.util.Try[T]"></a><a id="Try[T]:Try[T]"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#Try[T]=scala.util.Try[T]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Try</span><span class="tparams">[<span name="T">T</span>]</span><span class="result alias"> = <span class="extype" name="scala.util.Try"><a href="https://www.scala-lang.org/api/current/scala/util/Try.html">scala.util.Try</a></span>[<span class="extype" name="o1.util.Try.T">T</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">An alias for convenient use of <code>scala.util.Try</code> via <code>import o1.util._</code>.</p>
+    </li><li name="o1.util.URL" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="URL=java.net.URL"></a><a id="URL:URL"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#URL=java.net.URL" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">URL</span><span class="result alias"> = <span class="extype" name="java.net.URL">java.net.URL</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">An alias for convenient use of <code>java.net.URL</code> via <code>import o1.util._</code>.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="o1.util#Failure" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Failure:util.Failure.type"></a><a id="Failure:scala.util.Failure.type"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#Failure:util.Failure.type" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Failure</span><span class="result">: <span class="extype" name="scala.util.Failure"><a href="https://www.scala-lang.org/api/current/scala/util/Failure.html">scala.util.Failure</a></span>.type</span>
+      </span>
+      
+      <p class="shortcomment cmt">An alias for convenient use of <code>scala.util.Try</code> via <code>import o1.util._</code>.</p>
+    </li><li name="o1.util#Random" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Random:util.Random.type"></a><a id="Random:scala.util.Random.type"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#Random:util.Random.type" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Random</span><span class="result">: <span class="extype" name="scala.util.Random"><a href="https://www.scala-lang.org/api/current/scala/util/Random.html">scala.util.Random</a></span>.type</span>
+      </span>
+      
+      <p class="shortcomment cmt">An alias for convenient use of <code>scala.util.Random</code> via <code>import o1.util._</code>.</p>
+    </li><li name="o1.util#Success" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Success:util.Success.type"></a><a id="Success:scala.util.Success.type"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#Success:util.Success.type" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Success</span><span class="result">: <span class="extype" name="scala.util.Success"><a href="https://www.scala-lang.org/api/current/scala/util/Success.html">scala.util.Success</a></span>.type</span>
+      </span>
+      
+      <p class="shortcomment cmt">An alias for convenient use of <code>scala.util.Try</code> via <code>import o1.util._</code>.</p>
+    </li><li name="o1.util#Try" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Try:util.Try.type"></a><a id="Try:scala.util.Try.type"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#Try:util.Try.type" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Try</span><span class="result">: <span class="extype" name="scala.util.Try"><a href="https://www.scala-lang.org/api/current/scala/util/Try.html">scala.util.Try</a></span>.type</span>
+      </span>
+      
+      <p class="shortcomment cmt">An alias for convenient use of <code>scala.util.Try</code> via <code>import o1.util._</code>.</p>
+    </li><li name="o1.util.iofuncs#forEachLine" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="forEachLine(source:scala.io.Source)(effect:String=&gt;Unit):Unit"></a><a id="forEachLine(Source)((String)⇒Unit):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#forEachLine(source:scala.io.Source)(effect:String=&gt;Unit):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">forEachLine</span><span class="params">(<span name="source">source: <span class="extype" name="scala.io.Source">Source</span></span>)</span><span class="params">(<span name="effect">effect: (<span class="extype" name="scala.Predef.String">String</span>) ⇒ <span class="extype" name="scala.Unit">Unit</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Calls <code>getLines</code> on the given <code>Source</code> and performs the specified <code>effect</code> on each of the lines.</p><div class="fullcomment"><div class="comment cmt"><p>Calls <code>getLines</code> on the given <code>Source</code> and performs the specified <code>effect</code> on each of the lines.
+Calls <code>close()</code> on the source even if an exception occurs, but doesn’t catch any exceptions.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>iofuncs</dd></dl></div>
+    </li><li name="o1.util#ifImplemented" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ifImplemented[Result](computation:=&gt;Result):Option[Result]"></a><a id="ifImplemented[Result](⇒Result):Option[Result]"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#ifImplemented[Result](computation:=&gt;Result):Option[Result]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ifImplemented</span><span class="tparams">[<span name="Result">Result</span>]</span><span class="params">(<span name="computation">computation: ⇒ <span class="extype" name="o1.util.ifImplemented.Result">Result</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="o1.util.ifImplemented.Result">Result</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Performs a given computation and checks to see if it crashes with a <code>NotImplementedError</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Performs a given computation and checks to see if it crashes with a <code>NotImplementedError</code>.
+Returns the result of the computation in an <code>Option</code>; returns <code>None</code> only in the
+computation wasn’t implemented. Any other exception is thrown.</p></div><dl class="paramcmts block"><dt class="tparam">Result</dt><dd class="cmt"><p>the type of the given computation</p></dd><dt class="param">computation</dt><dd class="cmt"><p>a computation that may or may not be implemented</p></dd></dl></div>
+    </li><li name="o1.util#isImplemented" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isImplemented[Result](computation:=&gt;Result):Boolean"></a><a id="isImplemented[Result](⇒Result):Boolean"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#isImplemented[Result](computation:=&gt;Result):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isImplemented</span><span class="tparams">[<span name="Result">Result</span>]</span><span class="params">(<span name="computation">computation: ⇒ <span class="extype" name="o1.util.isImplemented.Result">Result</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Performs a given computation and determines whether it crashes with a <code>NotImplementedError</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Performs a given computation and determines whether it crashes with a <code>NotImplementedError</code>.
+Returns <code>true</code> if it did and <code>false</code> otherwise.</p></div><dl class="paramcmts block"><dt class="tparam">Result</dt><dd class="cmt"><p>the type of the given computation</p></dd><dt class="param">computation</dt><dd class="cmt"><p>a computation that may or may not be implemented</p></dd></dl></div>
+    </li><li name="o1.util.iofuncs#localFile" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="localFile(resourcePath:String):Option[o1.util.File]"></a><a id="localFile(String):Option[File]"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#localFile(resourcePath:String):Option[o1.util.File]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">localFile</span><span class="params">(<span name="resourcePath">resourcePath: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="#File=java.io.File" class="extmbr" name="o1.util.File">File</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Searches the classpath for a file with the given relative path and returns a corresponding <code>File</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Searches the classpath for a file with the given relative path and returns a corresponding <code>File</code>.
+The result comes in an <code>Option</code> wrapper in case no such file is accessible.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>iofuncs</dd></dl></div>
+    </li><li name="o1.util.iofuncs#localSource" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="localSource(resourcePath:String):Option[scala.io.Source]"></a><a id="localSource(String):Option[Source]"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#localSource(resourcePath:String):Option[scala.io.Source]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">localSource</span><span class="params">(<span name="resourcePath">resourcePath: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.io.Source">Source</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Searches the classpath for a file with the given relative path and returns a corresponding <code>Source</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Searches the classpath for a file with the given relative path and returns a corresponding <code>Source</code>.
+The result comes in an <code>Option</code> wrapper in case no such file is accessible. Assumes UTF-8 encoding.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>iofuncs</dd></dl></div>
+    </li><li name="o1.util.iofuncs#localURL" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="localURL(resourcePath:String):Option[o1.util.URL]"></a><a id="localURL(String):Option[URL]"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#localURL(resourcePath:String):Option[o1.util.URL]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">localURL</span><span class="params">(<span name="resourcePath">resourcePath: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="#URL=java.net.URL" class="extmbr" name="o1.util.URL">URL</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Searches the classpath for a file with the given relative path.</p><div class="fullcomment"><div class="comment cmt"><p>Searches the classpath for a file with the given relative path. Delegates the task to the class loader.
+Returns the URL of any found file in an <code>Option</code> wrapper.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>iofuncs</dd></dl></div>
+    </li><li name="o1.util.iofuncs#readFileLines" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="readFileLines(relativePath:String,trimEach:Boolean,excludeIfEmpty:Boolean):Option[Vector[String]]"></a><a id="readFileLines(String,Boolean,Boolean):Option[Vector[String]]"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#readFileLines(relativePath:String,trimEach:Boolean,excludeIfEmpty:Boolean):Option[Vector[String]]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readFileLines</span><span class="params">(<span name="relativePath">relativePath: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="trimEach">trimEach: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="excludeIfEmpty">excludeIfEmpty: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Vector">Vector</span>[<span class="extype" name="scala.Predef.String">String</span>]]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Reads and returns the lines from a classpath-relative text file.</p><div class="fullcomment"><div class="comment cmt"><p>Reads and returns the lines from a classpath-relative text file. The result comes in an
+<code>Option</code> wrapper in case no such file is accessible. Calls <code>close()</code> on the file even if
+an exception occurs, but doesn’t catch any exceptions. Assumes UTF-8 encoding.</p></div><dl class="paramcmts block"><dt class="param">relativePath</dt><dd class="cmt"><p>the path to a resource; relative to a classpath entry</p></dd><dt class="param">trimEach</dt><dd class="cmt"><p>whether to remove whitespace around each of the lines</p></dd><dt class="param">excludeIfEmpty</dt><dd class="cmt"><p>whether to exclude (possibly trimmed) empty lines from the return value</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>iofuncs</dd></dl></div>
+    </li><li name="o1.util.iofuncs#readLinesFromSource" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="readLinesFromSource(source:scala.io.Source,trimEach:Boolean,excludeIfEmpty:Boolean):Vector[String]"></a><a id="readLinesFromSource(Source,Boolean,Boolean):Vector[String]"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#readLinesFromSource(source:scala.io.Source,trimEach:Boolean,excludeIfEmpty:Boolean):Vector[String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readLinesFromSource</span><span class="params">(<span name="source">source: <span class="extype" name="scala.io.Source">Source</span></span>, <span name="trimEach">trimEach: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>, <span name="excludeIfEmpty">excludeIfEmpty: <span class="extype" name="scala.Boolean">Boolean</span> = <span class="symbol">true</span></span>)</span><span class="result">: <span class="extype" name="scala.Vector">Vector</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Calls <code>getLines</code> on the given <code>Source</code> and returns the lines in a vector.</p><div class="fullcomment"><div class="comment cmt"><p>Calls <code>getLines</code> on the given <code>Source</code> and returns the lines in a vector.
+Calls <code>close()</code> on the source even if an exception occurs, but doesn’t catch any exceptions.</p></div><dl class="paramcmts block"><dt class="param">source</dt><dd class="cmt"><p>the source to read the lines from</p></dd><dt class="param">trimEach</dt><dd class="cmt"><p>whether to remove whitespace around each of the lines</p></dd><dt class="param">excludeIfEmpty</dt><dd class="cmt"><p>whether to exclude (possibly trimmed) empty lines from the return value</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>iofuncs</dd></dl></div>
+    </li><li name="o1.util.iofuncs#readTextFile" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="readTextFile(relativePath:String):Option[String]"></a><a id="readTextFile(String):Option[String]"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#readTextFile(relativePath:String):Option[String]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">readTextFile</span><span class="params">(<span name="relativePath">relativePath: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.String">String</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns, as a single <code>String</code>, the entire contents of a classpath-relative text file.</p><div class="fullcomment"><div class="comment cmt"><p>Returns, as a single <code>String</code>, the entire contents of a classpath-relative text file. The result
+comes in an <code>Option</code> wrapper in case no such file is accessible. Calls <code>close()</code> on the file even
+if an exception occurs, but doesn’t catch any exceptions. Assumes UTF-8 encoding.</p></div><dl class="paramcmts block"><dt class="param">relativePath</dt><dd class="cmt"><p>the path to a resource; relative to a classpath entry</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>iofuncs</dd></dl></div>
+    </li><li name="o1.util.iofuncs#tryForSource" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tryForSource(pathOrURL:String):o1.util.Try[scala.io.Source]"></a><a id="tryForSource(String):Try[Source]"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#tryForSource(pathOrURL:String):o1.util.Try[scala.io.Source]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tryForSource</span><span class="params">(<span name="pathOrURL">pathOrURL: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Try[T]=scala.util.Try[T]" class="extmbr" name="o1.util.Try">Try</a>[<span class="extype" name="scala.io.Source">Source</span>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Takes in a path or a URL as a string and tries to construct a corresponding <code>Source</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Takes in a path or a URL as a string and tries to construct a corresponding <code>Source</code>.
+Tries to interpret the given string as one of the following, in order:</p><ol class="decimal"><li>A resource relative to the classpath (as per <a href="#localURL(resourcePath:String):Option[o1.util.URL]" class="extmbr" name="o1.util#localURL">localURL</a>).</li><li>A complete URL string, with protocol and all (e.g., &quot;http://example.com/&quot;).</li><li>A URL string with &quot;http://&quot; missing (e.g., &quot;example.com&quot;).</li><li>A URL string with &quot;https://&quot; missing.
+Calls <code>scala.io.Source.fromURL</code> on each of those candidates until a source is
+successfully constructed or all attempts have failed. Assumes UTF-8 encoding.</li></ol></div><dl class="paramcmts block"><dt class="param">pathOrURL</dt><dd class="cmt"><p>the possible path or URL to a resource</p></dd><dt>returns</dt><dd class="cmt"><p>the first <code>Success</code>, or a <code>Failure</code> if none of the candidates can be read as a <code>Source</code></p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>iofuncs</dd></dl></div>
+    </li><li name="o1.util.iofuncs#tryForURL" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="tryForURL(pathOrURL:String):o1.util.Try[o1.util.URL]"></a><a id="tryForURL(String):Try[URL]"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#tryForURL(pathOrURL:String):o1.util.Try[o1.util.URL]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">tryForURL</span><span class="params">(<span name="pathOrURL">pathOrURL: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="#Try[T]=scala.util.Try[T]" class="extmbr" name="o1.util.Try">Try</a>[<a href="#URL=java.net.URL" class="extmbr" name="o1.util.URL">URL</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Takes in a path or a URL as a string and tries to locate the corresponding resource.</p><div class="fullcomment"><div class="comment cmt"><p>Takes in a path or a URL as a string and tries to locate the corresponding resource.
+Tries to interpret the given string as one of the following (in order until a match is found):</p><ol class="decimal"><li>A resource relative to the classpath (as per <a href="#localURL(resourcePath:String):Option[o1.util.URL]" class="extmbr" name="o1.util#localURL">localURL</a>).</li><li>A complete URL string, with protocol and all (e.g., &quot;http://example.com/&quot;).</li><li>A URL string with &quot;http://&quot; missing (e.g., &quot;example.com&quot;).</li></ol></div><dl class="paramcmts block"><dt class="param">pathOrURL</dt><dd class="cmt"><p>the possible path or URL to a resource</p></dd><dt>returns</dt><dd class="cmt"><p>the first <code>Success</code>, or a <code>Failure</code> if the string isn’t even valid for forming a URL</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>iofuncs</dd></dl></div>
+    </li><li name="o1.util.iofuncs#useAndClose" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="useAndClose[Resource&lt;:iofuncs.this.Closeable,Result](resource:Resource)(operation:Resource=&gt;Result):Result"></a><a id="useAndClose[Resource&lt;:Closeable,Result](Resource)((Resource)⇒Result):Result"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#useAndClose[Resource&lt;:iofuncs.this.Closeable,Result](resource:Resource)(operation:Resource=&gt;Result):Result" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">useAndClose</span><span class="tparams">[<span name="Resource">Resource &lt;: <a href="#Closeable=AnyRef{defclose():Unit}" class="extmbr" name="o1.util.Closeable">Closeable</a></span>, <span name="Result">Result</span>]</span><span class="params">(<span name="resource">resource: <span class="extype" name="o1.util.iofuncs.useAndClose.Resource">Resource</span></span>)</span><span class="params">(<span name="operation">operation: (<span class="extype" name="o1.util.iofuncs.useAndClose.Resource">Resource</span>) ⇒ <span class="extype" name="o1.util.iofuncs.useAndClose.Result">Result</span></span>)</span><span class="result">: <span class="extype" name="o1.util.iofuncs.useAndClose.Result">Result</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Attempts to apply the given <code>operation</code> to the given <code>resource</code> and returns the result, making
+sure to <code>close</code> the resource.</p><div class="fullcomment"><div class="comment cmt"><p>Attempts to apply the given <code>operation</code> to the given <code>resource</code> and returns the result, making
+sure to <code>close</code> the resource. Calls <code>close()</code> on the resource even if the attempt fails with an
+exception. Doesn’t catch any exceptions. (This in an implementation of the “loan pattern”.)</p></div><dl class="paramcmts block"><dt class="param">resource</dt><dd class="cmt"><p>a resource, such as a file, that has a <code>close()</code> method</p></dd><dt class="param">operation</dt><dd class="cmt"><p>an operation that can be applied to <code>resource</code></p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>iofuncs</dd></dl></div>
+    </li><li name="o1.util.iofuncs#writeTextFile" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="writeTextFile(filePath:String,text:String):Unit"></a><a id="writeTextFile(String,String):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/util/index.html#writeTextFile(filePath:String,text:String):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">writeTextFile</span><span class="params">(<span name="filePath">filePath: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="text">text: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Writes the given <code>text</code> in a new text file at the given <code>filePath</code>.</p><div class="fullcomment"><div class="comment cmt"><p>Writes the given <code>text</code> in a new text file at the given <code>filePath</code>. Overwrites any existing file
+there. Encodes the output as UTF-8. Calls <code>close()</code> on the output stream even if an exception occurs,
+but doesn’t catch any exceptions.</p></div><dl class="paramcmts block"><dt class="param">filePath</dt><dd class="cmt"><p>an absolute path to a local file or a path relative to the working directory</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>iofuncs</dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="o1.util.iofuncs">
+              <h3>Inherited from <span class="extype" name="o1.util.iofuncs">iofuncs</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer"> This document is part of the ebook for O1 (a.k.a. CS-A1110 Programming 1), a course at Aalto University. </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

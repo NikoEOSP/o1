@@ -1,0 +1,1217 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title></title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../lib/index.js"></script>
+      <script type="text/javascript" src="../../index.js"></script>
+      <script type="text/javascript" src="../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../';
+      </script>
+    
+        </head>
+        <body onload='/* Customizations for CS-A1110: */
+$("ol#linearization").find("li").each(function() { var name = $(this).attr("name"); var appStuff = ["scala.App","scala.DelayedInit","scala.swing.SimpleSwingApplication","scala.swing.Reactor","scala.swing.SwingApplication"];if ($.inArray(name, appStuff) > -1) { $(this).trigger("click");}});
+$("dl.paramcmts dd.cmt").css("margin-left", "140px");
+
+$("div#packages li.indented0").css("display", "none");
+'>
+      <div id="search">
+        <span id="doc-title"><span id="doc-version"></span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../index.html">
+              <span class="name">root</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.o1" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="o1"></a><a id="o1:o1"></a>
+      <span class="permalink">
+      <a href="index.html#o1" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="O1Library is a toolkit designed for the course Programming 1 (a.k.a. O1) at Aalto University." href="../index.html">
+              <span class="name">o1</span>
+            </a>
+      </span>
+      
+      <p class="shortcomment cmt"><b>O1Library</b> is a toolkit designed for the course <a href="https://plus.cs.hut.fi/o1/2018/" target="_blank">Programming 1 (a.k.a. O1)</a> at Aalto University.</p><div class="fullcomment"><div class="comment cmt"><p><b>O1Library</b> is a toolkit designed for the course <a href="https://plus.cs.hut.fi/o1/2018/" target="_blank">Programming 1 (a.k.a. O1)</a> at Aalto University. It contains an assortment of tools;
+ most prominently, it provides a framework for simple graphical programming and utilities
+ for playing sound.</p><p>This is the front page of O1Library’s documentation. However, this is probably not the best
+place to start learning about O1Library as a student. That’s because the relevant content
+of this library is introduced bit by bit in the chapters of O1’s custom ebook alongside the
+relevant programming concepts and related assignments.</p><p>You may still find this documentation useful as a reference. You can also find some
+optional content here that you may wish to try.</p><p>This front page lists the content available in the top-level package called simply <code>o1</code>.
+These tools are available with the simple command <code>import o1._</code> in your Scala programs.
+Some of them you’ll use a lot; some of them you won’t necessarily need at all.</p><p>The tools listed here are actually implemented in a number of subpackages (<code>o1.gui</code>,
+<code>o1.sound</code>, etc.); what you see here are just “shortcut aliases” to those actual
+implementations. The aliases are here to make that convenient <code>import</code> command work and to
+provide you with this list of links to some of the more commonly used tools in O1Library.
+The subpackages also contain additional content not listed here.</p><p>O1Library has been developed by Aleksi Lukkarinen and Juha Sorva. Several of the key
+components in <code>o1.gui</code> and <code>o1.world</code> are built upon Aleksi’s
+<a href="https://github.com/Aalto-LeTech/Scala-Media-Computation" target="_blank">Scala Media Computation Library</a>.
+Some parts of O1Library draw inspiration from the “teachpacks” designed for the Racket
+programming language.</p><p>We thank Riku Autio and Juhani Numminen for bug reports and fixes and Otto Seppälä for
+discussions.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="o1.gui" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="gui"></a><a id="gui:gui"></a>
+      <span class="permalink">
+      <a href="../o1/index.html#gui" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="This package contains tools for building simple GUIs." href="index.html">
+              <span class="name">gui</span>
+            </a>
+      </span>
+      
+      <p class="shortcomment cmt">This package contains tools for building simple GUIs.</p><div class="fullcomment"><div class="comment cmt"><p>This package contains tools for building simple GUIs. The toolkit is particularly well suited
+to constructing GUIs that display information as loaded 2D images and/or geometric shapes.
+It is not designed for demanding graphical needs that call for high efficiency. Some of the
+tools in this package are built on the Swing GUI library, and the two libraries can be used in
+combination.</p><p>Some of the types in this package have aliases in the top-level package <a href="../index.html" class="extype" name="o1">o1</a>, so they are
+accessible to students simply via <code>import o1._</code>. Some of the package contents are not available
+in the top-level package and/or and included in this documentation.</p><p><b>Please note:</b> One of the key components of this package (views) comes in multiple varieties,
+which are defined in the <a href="mutable$.html" class="extype" name="o1.gui.mutable">mutable</a> and <a href="immutable$.html" class="extype" name="o1.gui.immutable">immutable</a> subpackages and not listed below. The
+<code>View</code> that is most commonly used in O1 (and aliased as <code>o1.View</code> in the top-level package) is
+<a href="mutable$$ViewFrame.html" class="extype" name="o1.gui.mutable.ViewFrame">o1.gui.mutable.ViewFrame</a>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="o1">o1</a></dd></dl></div>
+    </li><li name="o1.gui.mutable" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="mutable"></a><a id="mutable:mutable"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/index.html#mutable" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="This package contains the version of Views that we primarily use in O1: views to
+mutable domain models." href="mutable$.html">
+              <span class="name">mutable</span>
+            </a>
+      </span>
+      
+      <p class="shortcomment cmt">This package contains the version of <code>View</code>s that we primarily use in O1: views to
+<i>mutable</i> domain models.</p><div class="fullcomment"><div class="comment cmt"><p>This package contains the version of <code>View</code>s that we primarily use in O1: views to
+<i>mutable</i> domain models.</p><p>The top-level package <a href="../index.html" class="extype" name="o1">o1</a> provides an alias to the <a href="mutable$$ViewFrame.html" class="extype" name="o1.gui.mutable.ViewFrame">ViewFrame</a> class in this
+package, so it is available to students as <code>View</code> simply by importing <code>o1._</code>.</p><p>There is an alternative implementation of <code>View</code>s in <a href="immutable$.html" class="extype" name="o1.gui.immutable">o1.gui.immutable</a>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="index.html" class="extype" name="o1.gui">gui</a></dd></dl></div>
+    </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="" title="Mix in this trait on a view to give it a pause toggle."></a>
+                        <a href="" title="Mix in this trait on a view to give it a pause toggle.">
+                          HasPauseToggle
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="trait" href="mutable$$HasReplaceableModel.html" title="Mix in this trait on a view to enable discarding its model object for another."></a>
+                        <a href="mutable$$HasReplaceableModel.html" title="Mix in this trait on a view to enable discarding its model object for another.">
+                          HasReplaceableModel
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="mutable$$ViewComponent.html" title="A Swing-embeddable view (complete with a picture, a ticking clock, event handlers, etc.)."></a>
+                        <a href="mutable$$ViewComponent.html" title="A Swing-embeddable view (complete with a picture, a ticking clock, event handlers, etc.).">
+                          ViewComponent
+                        </a>
+                      </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="class" href="mutable$$ViewFrame.html" title="This class provides a framework for building simple GUIs."></a>
+                        <a href="mutable$$ViewFrame.html" title="This class provides a framework for building simple GUIs.">
+                          ViewFrame
+                        </a>
+                      </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body onload='/* Customizations for CS-A1110: */
+$("ol#linearization").find("li").each(function() { var name = $(this).attr("name"); var appStuff = ["scala.App","scala.DelayedInit","scala.swing.SimpleSwingApplication","scala.swing.Reactor","scala.swing.SwingApplication"];if ($.inArray(name, appStuff) > -1) { $(this).trigger("click");}});
+$("dl.paramcmts dd.cmt").css("margin-left", "140px");
+
+$("div#packages li.indented0").css("display", "none");
+' class="trait type">
+      <div id="definition">
+        <div class="big-circle trait">t</div>
+        <p id="owner"><a href="../index.html" class="extype" name="o1">o1</a>.<a href="index.html" class="extype" name="o1.gui">gui</a>.<a href="mutable$.html" class="extype" name="o1.gui.mutable">mutable</a></p>
+        <h1>HasPauseToggle<span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        <h3><span class="morelinks"></span></h3>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <span class="name">HasPauseToggle</span><span class="tparams">[<span name="Model">Model &lt;: <span class="extype" name="scala.AnyRef">AnyRef</span></span>]</span><span class="result"> extends <span class="extype" name="o1.gui.mutable.ControlDefaults">ControlDefaults</span>[<span class="extype" name="o1.gui.mutable.HasPauseToggle.Model">Model</span>] with <span class="extype" name="o1.gui.View.PauseImpl">PauseImpl</span></span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Mix in this trait on a view to give it a pause toggle. You’ll still need to call <code>togglePause</code>
+on whichever event you want to pause the view (e.g., user hitting space bar).</p></div><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><span class="extype" name="o1.gui.View.PauseImpl">PauseImpl</span>, <span class="extype" name="o1.gui.mutable.ControlDefaults">ControlDefaults</span>[<span class="extype" name="o1.gui.mutable.HasPauseToggle.Model">Model</span>], <span class="extype" name="o1.gui.mutable.HasModelField">HasModelField</span>[<span class="extype" name="o1.gui.mutable.HasPauseToggle.Model">Model</span>], <span class="extype" name="o1.gui.View.TooltipDefaults">TooltipDefaults</span>, <span class="extype" name="o1.gui.View.Controls">View.Controls</span>[<span class="extype" name="o1.gui.mutable.HasPauseToggle.Model">Model</span>], <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="o1.gui.mutable.HasPauseToggle"><span>HasPauseToggle</span></li><li class="in" name="o1.gui.View.PauseImpl"><span>PauseImpl</span></li><li class="in" name="o1.gui.mutable.ControlDefaults"><span>ControlDefaults</span></li><li class="in" name="o1.gui.mutable.HasModelField"><span>HasModelField</span></li><li class="in" name="o1.gui.View.TooltipDefaults"><span>TooltipDefaults</span></li><li class="in" name="o1.gui.View.Controls"><span>Controls</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        <div class="values members">
+              <h3>Abstract Value Members</h3>
+              <ol><li name="o1.gui.mutable.ControlDefaults#makePic" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="makePic:o1.gui.Pic"></a><a id="makePic:Pic"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#makePic:o1.gui.Pic" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">makePic</span><span class="result">: <a href="Pic.html" class="extype" name="o1.gui.Pic">Pic</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Returns a <a href="Pic.html" class="extype" name="o1.gui.Pic">Pic</a> that graphically represents the current state of the view’s <code>model</code>
+object.</p><div class="fullcomment"><div class="comment cmt"><p>Returns a <a href="Pic.html" class="extype" name="o1.gui.Pic">Pic</a> that graphically represents the current state of the view’s <code>model</code>
+object. This method is automatically invoked by the view after GUI events and clock ticks.
+Left abstract by this class so any concrete view needs to add a custom implementation.</p><p>For best results, all invocations of this method on a single view object should return
+<code>Pic</code>s of equal dimensions.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#refresh" visbl="pub" class="indented0 " data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="refresh():Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#refresh():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">abstract </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">refresh</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Programmatically requests an update to the graphics of the view (even though no
+clock tick or triggering GUI event occurred).</p><div class="fullcomment"><div class="comment cmt"><p>Programmatically requests an update to the graphics of the view (even though no
+clock tick or triggering GUI event occurred).</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li></ol>
+            </div>
+
+        <div class="values members">
+              <h3>Concrete Value Members</h3>
+              <ol>
+                <li name="scala.AnyRef#!=" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a><a id="!=(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#!=(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html###():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a><a id="==(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#==(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#asInstanceOf[T0]:T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a><a id="clone():AnyRef"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#clone():Object" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a><a id="eq(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#eq(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a><a id="equals(Any):Boolean"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#equals(x$1:Any):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#finalize():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#getClass():Class[_]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#hashCode():Int" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#isDone" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isDone:Boolean"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#isDone:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isDone</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Determines if the given state is a “done state” for the view.</p><div class="fullcomment"><div class="comment cmt"><p>Determines if the given state is a “done state” for the view. By default, this is never
+the case, but that behavior can be overridden.</p><p> Once done, the view stops reacting to events and updating its graphics and may close
+ its GUI window, depending on the constructor parameters of the view.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#isInstanceOf[T0]:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="o1.gui.mutable.HasPauseToggle#isPaused" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isPaused:Boolean"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#isPaused:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isPaused</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Determines whether the view should be paused at the current state.</p><div class="fullcomment"><div class="comment cmt"><p>Determines whether the view should be paused at the current state.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="o1.gui.mutable.HasPauseToggle">HasPauseToggle</a> → PauseImpl → ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.HasModelField#model" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="model:Model"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#model:Model" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">model</span><span class="result">: <span class="extype" name="o1.gui.mutable.HasPauseToggle.Model">Model</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">the model object represented in the view.</p><div class="fullcomment"><div class="comment cmt"><p>the model object represented in the view.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>HasModelField</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a><a id="ne(AnyRef):Boolean"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#ne(x$1:AnyRef):Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#notify():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#notifyAll():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onClick" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onClick(event:o1.gui.event.MouseClicked):Unit"></a><a id="onClick(event.MouseClicked):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onClick(event:o1.gui.event.MouseClicked):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onClick</span><span class="params">(<span name="event">event: <a href="event/index.html#MouseClicked=scala.swing.event.MouseClicked" class="extmbr" name="o1.gui.event.MouseClicked">event.MouseClicked</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever a mouse button is clicked (pressed+released, possibly multiple
+times in sequence) above the view.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever a mouse button is clicked (pressed+released, possibly multiple
+times in sequence) above the view. Does nothing by default but can be overridden.</p><p>If you don’t need much information about the GUI event, you may find it simpler
+to implement the other method of the same name instead of this one.
+</p></div><dl class="paramcmts block"><dt class="param">event</dt><dd class="cmt"><p>the GUI event that caused this handler to be called</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onClick" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onClick(position:o1.gui.Pos):Unit"></a><a id="onClick(Pos):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onClick(position:o1.gui.Pos):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onClick</span><span class="params">(<span name="position">position: <a href="../../../../O1Library/doc/o1/world/Pos.html" class="extmbr" name="o1.gui.Pos">Pos</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever a mouse button is clicked (pressed+released, possibly multiple
+times in sequence) above the view.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever a mouse button is clicked (pressed+released, possibly multiple
+times in sequence) above the view. Does nothing by default but can be overridden.</p><p>If the desired behavior depends on detailed information about the GUI event, you
+may want to implement the other method of the same name instead of this one.
+</p></div><dl class="paramcmts block"><dt class="param">position</dt><dd class="cmt"><p>the position of the mouse cursor relative to the view’s top left-hand corner</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onKeyDown" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onKeyDown(event:o1.gui.event.KeyPressed):Unit"></a><a id="onKeyDown(event.KeyPressed):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onKeyDown(event:o1.gui.event.KeyPressed):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onKeyDown</span><span class="params">(<span name="event">event: <a href="event/index.html#KeyPressed=scala.swing.event.KeyPressed" class="extmbr" name="o1.gui.event.KeyPressed">event.KeyPressed</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever a key on the keyboard is pressed down while the view
+has the keyboard focus.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever a key on the keyboard is pressed down while the view
+has the keyboard focus. Does nothing by default but can be overridden.</p><p>If you don’t need much information about the GUI event, you may find it simpler
+to implement the other method of the same name instead of this one.
+</p></div><dl class="paramcmts block"><dt class="param">event</dt><dd class="cmt"><p>the GUI event that caused this handler to be called</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onKeyDown" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onKeyDown(key:o1.gui.Key):Unit"></a><a id="onKeyDown(Key):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onKeyDown(key:o1.gui.Key):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onKeyDown</span><span class="params">(<span name="key">key: <a href="index.html#Key=scala.swing.event.Key.Value" class="extmbr" name="o1.gui.Key">Key</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever a key on the keyboard is pressed down while the view
+has the keyboard focus.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever a key on the keyboard is pressed down while the view
+has the keyboard focus. Does nothing by default but can be overridden.</p><p>If the desired behavior depends on detailed information about the GUI event, you
+may want to implement the other method of the same name instead of this one.
+</p></div><dl class="paramcmts block"><dt class="param">key</dt><dd class="cmt"><p>the key that was pressed down</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onKeyUp" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onKeyUp(event:o1.gui.event.KeyReleased):Unit"></a><a id="onKeyUp(event.KeyReleased):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onKeyUp(event:o1.gui.event.KeyReleased):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onKeyUp</span><span class="params">(<span name="event">event: <a href="event/index.html#KeyReleased=scala.swing.event.KeyReleased" class="extmbr" name="o1.gui.event.KeyReleased">event.KeyReleased</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever a key on the keyboard is released while the view
+has the keyboard focus.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever a key on the keyboard is released while the view
+has the keyboard focus. Does nothing by default but can be overridden.</p><p>If you don’t need much information about the GUI event, you may find it simpler
+to implement the other method of the same name instead of this one.
+</p></div><dl class="paramcmts block"><dt class="param">event</dt><dd class="cmt"><p>the GUI event that caused this handler to be called</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onKeyUp" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onKeyUp(key:o1.gui.Key):Unit"></a><a id="onKeyUp(Key):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onKeyUp(key:o1.gui.Key):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onKeyUp</span><span class="params">(<span name="key">key: <a href="index.html#Key=scala.swing.event.Key.Value" class="extmbr" name="o1.gui.Key">Key</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever a key on the keyboard is released while the view
+has the keyboard focus.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever a key on the keyboard is released while the view
+has the keyboard focus. Does nothing by default but can be overridden.</p><p>If the desired behavior depends on detailed information about the GUI event, you
+may want to implement the other method of the same name instead of this one.
+</p></div><dl class="paramcmts block"><dt class="param">key</dt><dd class="cmt"><p>the key that was released</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onMouseDown" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onMouseDown(event:o1.gui.event.MousePressed):Unit"></a><a id="onMouseDown(event.MousePressed):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onMouseDown(event:o1.gui.event.MousePressed):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseDown</span><span class="params">(<span name="event">event: <a href="event/index.html#MousePressed=scala.swing.event.MousePressed" class="extmbr" name="o1.gui.event.MousePressed">event.MousePressed</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever a mouse button is pressed down above the view.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever a mouse button is pressed down above the view.
+Does nothing by default but can be overridden.</p><p>If you don’t need much information about the GUI event, you may find it simpler
+to implement the other method of the same name instead of this one.
+</p></div><dl class="paramcmts block"><dt class="param">event</dt><dd class="cmt"><p>the GUI event that caused this handler to be called</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onMouseDown" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onMouseDown(position:o1.gui.Pos):Unit"></a><a id="onMouseDown(Pos):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onMouseDown(position:o1.gui.Pos):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseDown</span><span class="params">(<span name="position">position: <a href="../../../../O1Library/doc/o1/world/Pos.html" class="extmbr" name="o1.gui.Pos">Pos</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever a mouse button is pressed down above the view.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever a mouse button is pressed down above the view.
+Does nothing by default but can be overridden.</p><p>If the desired behavior depends on detailed information about the GUI event, you
+may want to implement the other method of the same name instead of this one.
+</p></div><dl class="paramcmts block"><dt class="param">position</dt><dd class="cmt"><p>the position of the mouse cursor relative to the view’s top left-hand corner</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onMouseDrag" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onMouseDrag(event:o1.gui.event.MouseDragged):Unit"></a><a id="onMouseDrag(event.MouseDragged):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onMouseDrag(event:o1.gui.event.MouseDragged):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseDrag</span><span class="params">(<span name="event">event: <a href="event/index.html#MouseDragged=scala.swing.event.MouseDragged" class="extmbr" name="o1.gui.event.MouseDragged">event.MouseDragged</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever the mouse cursor is dragged above the view.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever the mouse cursor is dragged above the view.
+Does nothing by default but can be overridden.</p><p>If you don’t need much information about the GUI event, you may find it simpler
+to implement the other method of the same name instead of this one.
+</p></div><dl class="paramcmts block"><dt class="param">event</dt><dd class="cmt"><p>the GUI event that caused this handler to be called</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onMouseDrag" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onMouseDrag(position:o1.gui.Pos):Unit"></a><a id="onMouseDrag(Pos):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onMouseDrag(position:o1.gui.Pos):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseDrag</span><span class="params">(<span name="position">position: <a href="../../../../O1Library/doc/o1/world/Pos.html" class="extmbr" name="o1.gui.Pos">Pos</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever the mouse cursor is dragged above the view.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever the mouse cursor is dragged above the view.
+Does nothing by default but can be overridden.</p><p>If the desired behavior depends on detailed information about the GUI event, you
+may want to implement the other method of the same name instead of this one.
+</p></div><dl class="paramcmts block"><dt class="param">position</dt><dd class="cmt"><p>the position of the mouse cursor relative to the view’s top left-hand corner</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onMouseEnter" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onMouseEnter(event:o1.gui.event.MouseEntered):Unit"></a><a id="onMouseEnter(event.MouseEntered):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onMouseEnter(event:o1.gui.event.MouseEntered):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseEnter</span><span class="params">(<span name="event">event: <a href="event/index.html#MouseEntered=scala.swing.event.MouseEntered" class="extmbr" name="o1.gui.event.MouseEntered">event.MouseEntered</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever the mouse cursor enters the view.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever the mouse cursor enters the view.
+Does nothing by default but can be overridden.</p></div><dl class="paramcmts block"><dt class="param">event</dt><dd class="cmt"><p>the GUI event that caused this handler to be called</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onMouseExit" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onMouseExit(event:o1.gui.event.MouseExited):Unit"></a><a id="onMouseExit(event.MouseExited):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onMouseExit(event:o1.gui.event.MouseExited):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseExit</span><span class="params">(<span name="event">event: <a href="event/index.html#MouseExited=scala.swing.event.MouseExited" class="extmbr" name="o1.gui.event.MouseExited">event.MouseExited</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever the mouse cursor exits the view.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever the mouse cursor exits the view.
+Does nothing by default but can be overridden.</p></div><dl class="paramcmts block"><dt class="param">event</dt><dd class="cmt"><p>the GUI event that caused this handler to be called</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onMouseMove" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onMouseMove(event:o1.gui.event.MouseMoved):Unit"></a><a id="onMouseMove(event.MouseMoved):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onMouseMove(event:o1.gui.event.MouseMoved):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseMove</span><span class="params">(<span name="event">event: <a href="event/index.html#MouseMoved=scala.swing.event.MouseMoved" class="extmbr" name="o1.gui.event.MouseMoved">event.MouseMoved</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever the mouse cursor moves above the view.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever the mouse cursor moves above the view.
+Does nothing by default but can be overridden.</p><p>If you don’t need much information about the GUI event, you may find it simpler
+to implement the other method of the same name instead of this one.
+</p></div><dl class="paramcmts block"><dt class="param">event</dt><dd class="cmt"><p>the GUI event that caused this handler to be called</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onMouseMove" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onMouseMove(position:o1.gui.Pos):Unit"></a><a id="onMouseMove(Pos):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onMouseMove(position:o1.gui.Pos):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseMove</span><span class="params">(<span name="position">position: <a href="../../../../O1Library/doc/o1/world/Pos.html" class="extmbr" name="o1.gui.Pos">Pos</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever the mouse cursor moves above the view.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever the mouse cursor moves above the view.
+Does nothing by default but can be overridden.</p><p>If the desired behavior depends on detailed information about the GUI event, you
+may want to implement the other method of the same name instead of this one.
+</p></div><dl class="paramcmts block"><dt class="param">position</dt><dd class="cmt"><p>the position of the mouse cursor relative to the view’s top left-hand corner</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onMouseUp" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onMouseUp(event:o1.gui.event.MouseReleased):Unit"></a><a id="onMouseUp(event.MouseReleased):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onMouseUp(event:o1.gui.event.MouseReleased):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseUp</span><span class="params">(<span name="event">event: <a href="event/index.html#MouseReleased=scala.swing.event.MouseReleased" class="extmbr" name="o1.gui.event.MouseReleased">event.MouseReleased</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever a mouse button is released above the view.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever a mouse button is released above the view.
+Does nothing by default but can be overridden.</p><p>If you don’t need much information about the GUI event, you may find it simpler
+to implement the other method of the same name instead of this one.
+</p></div><dl class="paramcmts block"><dt class="param">event</dt><dd class="cmt"><p>the GUI event that caused this handler to be called</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onMouseUp" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onMouseUp(position:o1.gui.Pos):Unit"></a><a id="onMouseUp(Pos):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onMouseUp(position:o1.gui.Pos):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onMouseUp</span><span class="params">(<span name="position">position: <a href="../../../../O1Library/doc/o1/world/Pos.html" class="extmbr" name="o1.gui.Pos">Pos</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever a mouse button is released above the view.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever a mouse button is released above the view.
+Does nothing by default but can be overridden.</p><p>If the desired behavior depends on detailed information about the GUI event, you
+may want to implement the other method of the same name instead of this one.
+</p></div><dl class="paramcmts block"><dt class="param">position</dt><dd class="cmt"><p>the position of the mouse cursor relative to the view’s top left-hand corner</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onStop" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onStop():Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onStop():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onStop</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an additional effect when the view is stopped (with <code>stop()</code>).</p><div class="fullcomment"><div class="comment cmt"><p>Causes an additional effect when the view is stopped (with <code>stop()</code>).
+By default, this method does nothing.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults → Controls</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onTick" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onTick():Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onTick():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onTick</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever the view’s internal clock ticks.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever the view’s internal clock ticks.
+Does nothing by default but can be overridden.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onType(event:o1.gui.event.KeyTyped):Unit"></a><a id="onType(event.KeyTyped):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onType(event:o1.gui.event.KeyTyped):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onType</span><span class="params">(<span name="event">event: <a href="event/index.html#KeyTyped=scala.swing.event.KeyTyped" class="extmbr" name="o1.gui.event.KeyTyped">event.KeyTyped</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever a key on the keyboard is typed (pressed+released) while
+the view has the keyboard focus.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever a key on the keyboard is typed (pressed+released) while
+the view has the keyboard focus. Does nothing by default but can be overridden.</p><p>If you don’t need much information about the GUI event, you may find it simpler
+to implement the other method of the same name instead of this one.
+</p></div><dl class="paramcmts block"><dt class="param">event</dt><dd class="cmt"><p>the GUI event that caused this handler to be called</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onType" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onType(character:Char):Unit"></a><a id="onType(Char):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onType(character:Char):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onType</span><span class="params">(<span name="character">character: <span class="extype" name="scala.Char">Char</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever a key on the keyboard is typed (pressed+released) while
+the view has the keyboard focus.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever a key on the keyboard is typed (pressed+released) while
+the view has the keyboard focus. Does nothing by default but can be overridden.</p><p>If the desired behavior depends on detailed information about the GUI event, you
+may want to implement the other method of the same name instead of this one.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onWheel" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onWheel(event:o1.gui.event.MouseWheelMoved):Unit"></a><a id="onWheel(event.MouseWheelMoved):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onWheel(event:o1.gui.event.MouseWheelMoved):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onWheel</span><span class="params">(<span name="event">event: <a href="event/index.html#MouseWheelMoved=scala.swing.event.MouseWheelMoved" class="extmbr" name="o1.gui.event.MouseWheelMoved">event.MouseWheelMoved</a></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever the mouse wheel is rotated above the view.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever the mouse wheel is rotated above the view.
+Does nothing by default but can be overridden.</p><p>If you don’t need much information about the GUI event, you may find it simpler
+to implement the other method of the same name instead of this one.
+</p></div><dl class="paramcmts block"><dt class="param">event</dt><dd class="cmt"><p>the GUI event that caused this handler to be called</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#onWheel" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="onWheel(rotation:Int):Unit"></a><a id="onWheel(Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#onWheel(rotation:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">onWheel</span><span class="params">(<span name="rotation">rotation: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Causes an effect whenever the mouse wheel is rotated above the view.</p><div class="fullcomment"><div class="comment cmt"><p>Causes an effect whenever the mouse wheel is rotated above the view.
+Does nothing by default but can be overridden.</p><p>If the desired behavior depends on detailed information about the GUI event, you
+may want to implement the other method of the same name instead of this one.
+</p></div><dl class="paramcmts block"><dt class="param">rotation</dt><dd class="cmt"><p>the number of steps the wheel rotated (negative means up, positive down)</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.mutable.ControlDefaults#sound" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sound:Option[o1.sound.sampled.Sound]"></a><a id="sound:Option[sound.sampled.Sound]"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#sound:Option[o1.sound.sampled.Sound]" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sound</span><span class="result">: <span class="extype" name="scala.Option">Option</span>[<a href="../sound/sampled/Sound.html" class="extype" name="o1.sound.sampled.Sound">sound.sampled.Sound</a>]</span>
+      </span>
+      
+      <p class="shortcomment cmt">Determines whether the view should play a sound, given the current state of its model.</p><div class="fullcomment"><div class="comment cmt"><p>Determines whether the view should play a sound, given the current state of its model.
+By default, no sounds are played.</p></div><dl class="paramcmts block"><dt>returns</dt><dd class="cmt"><p>a <a href="../../../../O1Library/doc/o1/sound/sampled/Sound.html" class="extmbr" name="o1.Sound">Sound</a> that the view should play; <code>None</code> if no sound is appropriate for
+        the current state</p></dd></dl><dl class="attributes block"> <dt>Definition Classes</dt><dd>ControlDefaults</dd></dl></div>
+    </li><li name="o1.gui.View.PauseImpl#startsPaused" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="startsPaused:Boolean"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#startsPaused:Boolean" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">startsPaused</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Whether the view starts in a paused state.</p><div class="fullcomment"><div class="comment cmt"><p>Whether the view starts in a paused state. By default, always returns <code>false</code>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>PauseImpl</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a><a id="synchronized[T0](⇒T0):T0"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#synchronized[T0](x$1:=&gt;T0):T0" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#toString():String" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params"></span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="o1.gui.View.PauseImpl#togglePause" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="togglePause():Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#togglePause():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">togglePause</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <p class="shortcomment cmt">Tells the view to pause if unpaused and vice versa.</p><div class="fullcomment"><div class="comment cmt"><p>Tells the view to pause if unpaused and vice versa.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd>PauseImpl</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#wait():Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a><a id="wait(Long,Int):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#wait(x$1:Long,x$2:Int):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a><a id="wait(Long):Unit"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/mutable$$HasPauseToggle.html#wait(x$1:Long):Unit" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="o1.gui.View.PauseImpl">
+              <h3>Inherited from <span class="extype" name="o1.gui.View.PauseImpl">PauseImpl</span></h3>
+            </div><div class="parent" name="o1.gui.mutable.ControlDefaults">
+              <h3>Inherited from <span class="extype" name="o1.gui.mutable.ControlDefaults">ControlDefaults</span>[<span class="extype" name="o1.gui.mutable.HasPauseToggle.Model">Model</span>]</h3>
+            </div><div class="parent" name="o1.gui.mutable.HasModelField">
+              <h3>Inherited from <span class="extype" name="o1.gui.mutable.HasModelField">HasModelField</span>[<span class="extype" name="o1.gui.mutable.HasPauseToggle.Model">Model</span>]</h3>
+            </div><div class="parent" name="o1.gui.View.TooltipDefaults">
+              <h3>Inherited from <span class="extype" name="o1.gui.View.TooltipDefaults">TooltipDefaults</span></h3>
+            </div><div class="parent" name="o1.gui.View.Controls">
+              <h3>Inherited from <span class="extype" name="o1.gui.View.Controls">View.Controls</span>[<span class="extype" name="o1.gui.mutable.HasPauseToggle.Model">Model</span>]</h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer"> This document is part of the ebook for O1 (a.k.a. CS-A1110 Programming 1), a course at Aalto University. </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>

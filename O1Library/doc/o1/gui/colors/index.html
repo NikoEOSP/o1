@@ -1,0 +1,3047 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+          <title></title>
+          <meta name="description" content="" />
+          <meta name="keywords" content="" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/index.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.panzoom.min.js"></script>
+      <script type="text/javascript" src="../../../lib/jquery.mousewheel.min.js"></script>
+      <script type="text/javascript" src="../../../lib/index.js"></script>
+      <script type="text/javascript" src="../../../index.js"></script>
+      <script type="text/javascript" src="../../../lib/scheduler.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+        /* this variable can be used by the JS to determine the path to the root document */
+        var toRoot = '../../../';
+      </script>
+    
+        </head>
+        <body onload='/* Customizations for CS-A1110: */
+$("ol#linearization").find("li").each(function() { var name = $(this).attr("name"); var appStuff = ["scala.App","scala.DelayedInit","scala.swing.SimpleSwingApplication","scala.swing.Reactor","scala.swing.SwingApplication"];if ($.inArray(name, appStuff) > -1) { $(this).trigger("click");}});
+$("dl.paramcmts dd.cmt").css("margin-left", "140px");
+
+$("div#packages li.indented0").css("display", "none");
+'>
+      <div id="search">
+        <span id="doc-title"><span id="doc-version"></span></span>
+        <span class="close-results"><span class="left">&lt;</span> Back</span>
+        <div id="textfilter">
+          <span class="input">
+            <input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/" />
+            <i class="clear material-icons"></i>
+            <i id="search-icon" class="material-icons"></i>
+          </span>
+        </div>
+    </div>
+      <div id="search-results">
+        <div id="search-progress">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="results-content">
+          <div id="entity-results"></div>
+          <div id="member-results"></div>
+        </div>
+      </div>
+      <div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;">
+        <div id="content-container" style="-webkit-overflow-scrolling: touch;">
+          <div id="subpackage-spacer">
+            <div id="packages">
+              <h1>Packages</h1>
+              <ul>
+                <li name="_root_.root" visbl="pub" class="indented0 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="_root_"></a><a id="root:_root_"></a>
+      <span class="permalink">
+      <a href="index.html#_root_" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="../../../index.html">
+              <span class="name">root</span>
+            </a>
+      </span>
+      
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="_root_.o1" visbl="pub" class="indented1 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="o1"></a><a id="o1:o1"></a>
+      <span class="permalink">
+      <a href="index.html#o1" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="O1Library is a toolkit designed for the course Programming 1 (a.k.a. O1) at Aalto University." href="../../index.html">
+              <span class="name">o1</span>
+            </a>
+      </span>
+      
+      <p class="shortcomment cmt"><b>O1Library</b> is a toolkit designed for the course <a href="https://plus.cs.hut.fi/o1/2018/" target="_blank">Programming 1 (a.k.a. O1)</a> at Aalto University.</p><div class="fullcomment"><div class="comment cmt"><p><b>O1Library</b> is a toolkit designed for the course <a href="https://plus.cs.hut.fi/o1/2018/" target="_blank">Programming 1 (a.k.a. O1)</a> at Aalto University. It contains an assortment of tools;
+ most prominently, it provides a framework for simple graphical programming and utilities
+ for playing sound.</p><p>This is the front page of O1Library’s documentation. However, this is probably not the best
+place to start learning about O1Library as a student. That’s because the relevant content
+of this library is introduced bit by bit in the chapters of O1’s custom ebook alongside the
+relevant programming concepts and related assignments.</p><p>You may still find this documentation useful as a reference. You can also find some
+optional content here that you may wish to try.</p><p>This front page lists the content available in the top-level package called simply <code>o1</code>.
+These tools are available with the simple command <code>import o1._</code> in your Scala programs.
+Some of them you’ll use a lot; some of them you won’t necessarily need at all.</p><p>The tools listed here are actually implemented in a number of subpackages (<code>o1.gui</code>,
+<code>o1.sound</code>, etc.); what you see here are just “shortcut aliases” to those actual
+implementations. The aliases are here to make that convenient <code>import</code> command work and to
+provide you with this list of links to some of the more commonly used tools in O1Library.
+The subpackages also contain additional content not listed here.</p><p>O1Library has been developed by Aleksi Lukkarinen and Juha Sorva. Several of the key
+components in <code>o1.gui</code> and <code>o1.world</code> are built upon Aleksi’s
+<a href="https://github.com/Aalto-LeTech/Scala-Media-Computation" target="_blank">Scala Media Computation Library</a>.
+Some parts of O1Library draw inspiration from the “teachpacks” designed for the Racket
+programming language.</p><p>We thank Riku Autio and Juhani Numminen for bug reports and fixes and Otto Seppälä for
+discussions.
+</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../../index.html" class="extype" name="_root_">root</a></dd></dl></div>
+    </li><li name="o1.gui" visbl="pub" class="indented2 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="gui"></a><a id="gui:gui"></a>
+      <span class="permalink">
+      <a href="../o1/index.html#gui" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="This package contains tools for building simple GUIs." href="../index.html">
+              <span class="name">gui</span>
+            </a>
+      </span>
+      
+      <p class="shortcomment cmt">This package contains tools for building simple GUIs.</p><div class="fullcomment"><div class="comment cmt"><p>This package contains tools for building simple GUIs. The toolkit is particularly well suited
+to constructing GUIs that display information as loaded 2D images and/or geometric shapes.
+It is not designed for demanding graphical needs that call for high efficiency. Some of the
+tools in this package are built on the Swing GUI library, and the two libraries can be used in
+combination.</p><p>Some of the types in this package have aliases in the top-level package <a href="../../index.html" class="extype" name="o1">o1</a>, so they are
+accessible to students simply via <code>import o1._</code>. Some of the package contents are not available
+in the top-level package and/or and included in this documentation.</p><p><b>Please note:</b> One of the key components of this package (views) comes in multiple varieties,
+which are defined in the <a href="../mutable$.html" class="extype" name="o1.gui.mutable">mutable</a> and <a href="../immutable$.html" class="extype" name="o1.gui.immutable">immutable</a> subpackages and not listed below. The
+<code>View</code> that is most commonly used in O1 (and aliased as <code>o1.View</code> in the top-level package) is
+<a href="../mutable$$ViewFrame.html" class="extype" name="o1.gui.mutable.ViewFrame">o1.gui.mutable.ViewFrame</a>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../../index.html" class="extype" name="o1">o1</a></dd></dl></div>
+    </li><li name="o1.gui.colors" visbl="pub" class="indented3 current" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="colors"></a><a id="colors:colors"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/index.html#colors" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">colors</span>
+      </span>
+      
+      <p class="shortcomment cmt">This package contains <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a> constants.</p><div class="fullcomment"><div class="comment cmt"><p>This package contains <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a> constants. They cover all the colors listed in the W3C’s
+<a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">CSS Color Module specification (July
+5th, 2017)</a>; there are some additional ones as well.</p><p>All the colors are fully opaque, except <a href="#Transparent:o1.gui.Color" class="extmbr" name="o1.gui.colors#Transparent">Transparent</a>, which is fully transparent.</p><p>The contents of this package are aliased in the top-level package <a href="../../index.html" class="extype" name="o1">o1</a> so that
+they are accessible to students simply via <code>import o1._</code>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="o1.gui">gui</a></dd></dl></div>
+    </li><li class="current-entities indented3">
+                        <span class="separator"></span>
+                        <a class="object" href="package$$O_o$.html" title=""></a>
+                        <a href="package$$O_o$.html" title="">
+                          O_o
+                        </a>
+                      </li><li name="o1.gui.event" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="event"></a><a id="event:event"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/index.html#event" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="This package exists in order to provide aliases to event classes in Swing and
+to add some methods to Swing’s InputEvent via o1.gui.event.ConvenientInputEvent." href="../event/index.html">
+              <span class="name">event</span>
+            </a>
+      </span>
+      
+      <p class="shortcomment cmt">This package exists in order to provide aliases to event classes in Swing and
+to add some methods to Swing’s InputEvent via <a href="../event/package$$ConvenientInputEvent.html" class="extype" name="o1.gui.event.ConvenientInputEvent">o1.gui.event.ConvenientInputEvent</a>.</p><div class="fullcomment"><div class="comment cmt"><p>This package exists in order to provide aliases to event classes in Swing and
+to add some methods to Swing’s InputEvent via <a href="../event/package$$ConvenientInputEvent.html" class="extype" name="o1.gui.event.ConvenientInputEvent">o1.gui.event.ConvenientInputEvent</a>.</p><p>The contents of this package are aliased in the top-level package <a href="../../index.html" class="extype" name="o1">o1</a>, so that
+they are accessible to students simply via* <code>import o1._</code>.</p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="o1.gui">gui</a></dd></dl></div>
+    </li><li name="o1.gui.layout" visbl="pub" class="indented3 " data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="layout"></a><a id="layout:layout"></a>
+      <span class="permalink">
+      <a href="../../o1/gui/index.html#layout" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a title="The package o1.gui.layout contains utilities that make it more convenient to lay out components in simple
+GridBagPanels from
+Scala's Swing library." href="../layout/index.html">
+              <span class="name">layout</span>
+            </a>
+      </span>
+      
+      <p class="shortcomment cmt">The package <code>o1.gui.layout</code> contains utilities that make it more convenient to lay out components in simple
+<a href="https://www.scala-lang.org/api/current/scala-swing/scala/swing/GridBagPanel.html" target="_blank">GridBagPanel</a>s from
+Scala's Swing library.</p><div class="fullcomment"><div class="comment cmt"><p>The package <code>o1.gui.layout</code> contains utilities that make it more convenient to lay out components in simple
+<a href="https://www.scala-lang.org/api/current/scala-swing/scala/swing/GridBagPanel.html" target="_blank">GridBagPanel</a>s from
+Scala's Swing library. These utilities are used internally by some of the given GUIs in O1.</p><p><b>NOTE TO STUDENTS: In this course, you don't need to understand how this package works or can be used.</b></p></div><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="../index.html" class="extype" name="o1.gui">gui</a></dd></dl></div>
+    </li>
+              </ul>
+            </div>
+          </div>
+          <div id="content">
+            <body onload='/* Customizations for CS-A1110: */
+$("ol#linearization").find("li").each(function() { var name = $(this).attr("name"); var appStuff = ["scala.App","scala.DelayedInit","scala.swing.SimpleSwingApplication","scala.swing.Reactor","scala.swing.SwingApplication"];if ($.inArray(name, appStuff) > -1) { $(this).trigger("click");}});
+$("dl.paramcmts dd.cmt").css("margin-left", "140px");
+
+$("div#packages li.indented0").css("display", "none");
+' class="package value">
+      <div id="definition">
+        <div class="big-circle package">p</div>
+        <p id="owner"><a href="../../index.html" class="extype" name="o1">o1</a>.<a href="../index.html" class="extype" name="o1.gui">gui</a></p>
+        <h1>colors<span class="permalink">
+      <a href="../../../o1/gui/colors/index.html" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span></h1>
+        
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">colors</span>
+      </span>
+      </h4>
+
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>This package contains <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a> constants. They cover all the colors listed in the W3C’s
+<a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">CSS Color Module specification (July
+5th, 2017)</a>; there are some additional ones as well.</p><p>All the colors are fully opaque, except <a href="#Transparent:o1.gui.Color" class="extmbr" name="o1.gui.colors#Transparent">Transparent</a>, which is fully transparent.</p><p>The contents of this package are aliased in the top-level package <a href="../../index.html" class="extype" name="o1">o1</a> so that
+they are accessible to students simply via <code>import o1._</code>.</p></div><div class="toggleContainer block">
+          <span class="toggle">
+            Linear Supertypes
+          </span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div class="toggle"></div>
+        <div id="memberfilter">
+          <i class="material-icons arrow"></i>
+          <span class="input">
+            <input id="mbrsel-input" placeholder="Filter all members" type="text" accesskey="/" />
+          </span>
+          <i class="clear material-icons"></i>
+        </div>
+        <div id="filterby">
+          <div id="order">
+            <span class="filtertype">Ordering</span>
+            <ol>
+              
+              <li class="alpha in"><span>Alphabetic</span></li>
+              <li class="inherit out"><span>By Inheritance</span></li>
+            </ol>
+          </div>
+          <div class="ancestors">
+                  <span class="filtertype">Inherited<br />
+                  </span>
+                  <ol id="linearization">
+                    <li class="in" name="o1.gui.colors"><span>colors</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                  </ol>
+                </div><div class="ancestors">
+              <span class="filtertype"></span>
+              <ol>
+                <li class="hideall out"><span>Hide All</span></li>
+                <li class="showall in"><span>Show All</span></li>
+              </ol>
+            </div>
+          <div id="visbl">
+              <span class="filtertype">Visibility</span>
+              <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+            </div>
+        </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        
+
+        
+
+        <div class="values members">
+              <h3>Value Members</h3>
+              <ol>
+                <li name="o1.gui.colors#AliceBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AliceBlue:o1.gui.Color"></a><a id="AliceBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#AliceBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">AliceBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Amethyst" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Amethyst:o1.gui.Color"></a><a id="Amethyst:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Amethyst:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Amethyst</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#AntiqueWhite" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="AntiqueWhite:o1.gui.Color"></a><a id="AntiqueWhite:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#AntiqueWhite:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">AntiqueWhite</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Aqua" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Aqua:o1.gui.Color"></a><a id="Aqua:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Aqua:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Aqua</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Aquamarine" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Aquamarine:o1.gui.Color"></a><a id="Aquamarine:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Aquamarine:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Aquamarine</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Azure" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Azure:o1.gui.Color"></a><a id="Azure:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Azure:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Azure</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Beige" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Beige:o1.gui.Color"></a><a id="Beige:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Beige:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Beige</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Bisque" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Bisque:o1.gui.Color"></a><a id="Bisque:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Bisque:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Bisque</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Black" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Black:o1.gui.Color"></a><a id="Black:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Black:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Black</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Black10" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Black10:o1.gui.Color"></a><a id="Black10:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Black10:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Black10</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 10% black.</p>
+    </li><li name="o1.gui.colors#Black20" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Black20:o1.gui.Color"></a><a id="Black20:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Black20:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Black20</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 20% black.</p>
+    </li><li name="o1.gui.colors#Black30" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Black30:o1.gui.Color"></a><a id="Black30:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Black30:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Black30</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 30% black.</p>
+    </li><li name="o1.gui.colors#Black40" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Black40:o1.gui.Color"></a><a id="Black40:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Black40:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Black40</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 40% black.</p>
+    </li><li name="o1.gui.colors#Black50" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Black50:o1.gui.Color"></a><a id="Black50:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Black50:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Black50</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 50% black.</p>
+    </li><li name="o1.gui.colors#Black60" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Black60:o1.gui.Color"></a><a id="Black60:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Black60:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Black60</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 60% black.</p>
+    </li><li name="o1.gui.colors#Black70" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Black70:o1.gui.Color"></a><a id="Black70:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Black70:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Black70</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 70% black.</p>
+    </li><li name="o1.gui.colors#Black80" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Black80:o1.gui.Color"></a><a id="Black80:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Black80:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Black80</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 80% black.</p>
+    </li><li name="o1.gui.colors#Black90" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Black90:o1.gui.Color"></a><a id="Black90:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Black90:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Black90</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 90% black.</p>
+    </li><li name="o1.gui.colors#BlanchedAlmond" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BlanchedAlmond:o1.gui.Color"></a><a id="BlanchedAlmond:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#BlanchedAlmond:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">BlanchedAlmond</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Blue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Blue:o1.gui.Color"></a><a id="Blue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Blue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Blue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#BlueViolet" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BlueViolet:o1.gui.Color"></a><a id="BlueViolet:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#BlueViolet:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">BlueViolet</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Brown" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Brown:o1.gui.Color"></a><a id="Brown:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Brown:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Brown</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#BurlyWood" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="BurlyWood:o1.gui.Color"></a><a id="BurlyWood:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#BurlyWood:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">BurlyWood</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#CadetBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CadetBlue:o1.gui.Color"></a><a id="CadetBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#CadetBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CadetBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Chartreuse" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Chartreuse:o1.gui.Color"></a><a id="Chartreuse:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Chartreuse:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Chartreuse</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Chocolate" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Chocolate:o1.gui.Color"></a><a id="Chocolate:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Chocolate:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Chocolate</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Coral" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Coral:o1.gui.Color"></a><a id="Coral:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Coral:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Coral</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#CornSilk" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CornSilk:o1.gui.Color"></a><a id="CornSilk:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#CornSilk:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CornSilk</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#CornflowerBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CornflowerBlue:o1.gui.Color"></a><a id="CornflowerBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#CornflowerBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">CornflowerBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Crimson" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Crimson:o1.gui.Color"></a><a id="Crimson:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Crimson:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Crimson</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Cyan" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Cyan:o1.gui.Color"></a><a id="Cyan:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Cyan:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Cyan</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkBlue:o1.gui.Color"></a><a id="DarkBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkCyan" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkCyan:o1.gui.Color"></a><a id="DarkCyan:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkCyan:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkCyan</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkGoldenrod" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkGoldenrod:o1.gui.Color"></a><a id="DarkGoldenrod:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkGoldenrod:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkGoldenrod</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkGray" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkGray:o1.gui.Color"></a><a id="DarkGray:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkGray:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkGray</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkGreen" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkGreen:o1.gui.Color"></a><a id="DarkGreen:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkGreen:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkGreen</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkGrey" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkGrey:o1.gui.Color"></a><a id="DarkGrey:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkGrey:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkGrey</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkKhaki" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkKhaki:o1.gui.Color"></a><a id="DarkKhaki:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkKhaki:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkKhaki</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkMagenta" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkMagenta:o1.gui.Color"></a><a id="DarkMagenta:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkMagenta:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkMagenta</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkOliveGreen" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkOliveGreen:o1.gui.Color"></a><a id="DarkOliveGreen:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkOliveGreen:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkOliveGreen</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkOrange" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkOrange:o1.gui.Color"></a><a id="DarkOrange:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkOrange:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkOrange</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkOrchid" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkOrchid:o1.gui.Color"></a><a id="DarkOrchid:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkOrchid:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkOrchid</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkRed" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkRed:o1.gui.Color"></a><a id="DarkRed:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkRed:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkRed</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkSalmon" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkSalmon:o1.gui.Color"></a><a id="DarkSalmon:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkSalmon:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkSalmon</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkSeaGreen" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkSeaGreen:o1.gui.Color"></a><a id="DarkSeaGreen:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkSeaGreen:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkSeaGreen</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkSlateBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkSlateBlue:o1.gui.Color"></a><a id="DarkSlateBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkSlateBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkSlateBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkSlateGray" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkSlateGray:o1.gui.Color"></a><a id="DarkSlateGray:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkSlateGray:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkSlateGray</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkSlateGrey" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkSlateGrey:o1.gui.Color"></a><a id="DarkSlateGrey:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkSlateGrey:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkSlateGrey</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkTurquoise" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkTurquoise:o1.gui.Color"></a><a id="DarkTurquoise:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkTurquoise:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkTurquoise</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DarkViolet" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DarkViolet:o1.gui.Color"></a><a id="DarkViolet:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DarkViolet:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DarkViolet</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DeepPink" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DeepPink:o1.gui.Color"></a><a id="DeepPink:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DeepPink:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DeepPink</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DeepSkyBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DeepSkyBlue:o1.gui.Color"></a><a id="DeepSkyBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DeepSkyBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DeepSkyBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DimGray" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DimGray:o1.gui.Color"></a><a id="DimGray:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DimGray:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DimGray</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DimGrey" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DimGrey:o1.gui.Color"></a><a id="DimGrey:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DimGrey:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DimGrey</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#DodgerBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DodgerBlue:o1.gui.Color"></a><a id="DodgerBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#DodgerBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">DodgerBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#FireBrick" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FireBrick:o1.gui.Color"></a><a id="FireBrick:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#FireBrick:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FireBrick</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#FloralWhite" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FloralWhite:o1.gui.Color"></a><a id="FloralWhite:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#FloralWhite:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">FloralWhite</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#ForestGreen" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ForestGreen:o1.gui.Color"></a><a id="ForestGreen:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#ForestGreen:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ForestGreen</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Fuchsia" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Fuchsia:o1.gui.Color"></a><a id="Fuchsia:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Fuchsia:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Fuchsia</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Gainsboro" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Gainsboro:o1.gui.Color"></a><a id="Gainsboro:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Gainsboro:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Gainsboro</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#GhostWhite" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GhostWhite:o1.gui.Color"></a><a id="GhostWhite:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#GhostWhite:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">GhostWhite</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Gold" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Gold:o1.gui.Color"></a><a id="Gold:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Gold:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Gold</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Goldenrod" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Goldenrod:o1.gui.Color"></a><a id="Goldenrod:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Goldenrod:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Goldenrod</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Gray" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Gray:o1.gui.Color"></a><a id="Gray:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Gray:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Gray</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Green" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Green:o1.gui.Color"></a><a id="Green:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Green:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Green</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#GreenYellow" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GreenYellow:o1.gui.Color"></a><a id="GreenYellow:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#GreenYellow:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">GreenYellow</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Grey" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Grey:o1.gui.Color"></a><a id="Grey:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Grey:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Grey</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Honeydew" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Honeydew:o1.gui.Color"></a><a id="Honeydew:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Honeydew:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Honeydew</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#HotPink" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="HotPink:o1.gui.Color"></a><a id="HotPink:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#HotPink:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">HotPink</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#IndianRed" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IndianRed:o1.gui.Color"></a><a id="IndianRed:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#IndianRed:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">IndianRed</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Indigo" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Indigo:o1.gui.Color"></a><a id="Indigo:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Indigo:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Indigo</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Ivory" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Ivory:o1.gui.Color"></a><a id="Ivory:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Ivory:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Ivory</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Khaki" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Khaki:o1.gui.Color"></a><a id="Khaki:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Khaki:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Khaki</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Lavender" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Lavender:o1.gui.Color"></a><a id="Lavender:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Lavender:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Lavender</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LavenderBlush" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LavenderBlush:o1.gui.Color"></a><a id="LavenderBlush:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LavenderBlush:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LavenderBlush</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LawnGreen" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LawnGreen:o1.gui.Color"></a><a id="LawnGreen:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LawnGreen:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LawnGreen</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LemonChiffon" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LemonChiffon:o1.gui.Color"></a><a id="LemonChiffon:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LemonChiffon:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LemonChiffon</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LightBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LightBlue:o1.gui.Color"></a><a id="LightBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LightBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LightBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LightCoral" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LightCoral:o1.gui.Color"></a><a id="LightCoral:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LightCoral:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LightCoral</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LightCyan" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LightCyan:o1.gui.Color"></a><a id="LightCyan:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LightCyan:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LightCyan</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LightGoldenrodYellow" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LightGoldenrodYellow:o1.gui.Color"></a><a id="LightGoldenrodYellow:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LightGoldenrodYellow:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LightGoldenrodYellow</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LightGray" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LightGray:o1.gui.Color"></a><a id="LightGray:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LightGray:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LightGray</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LightGreen" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LightGreen:o1.gui.Color"></a><a id="LightGreen:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LightGreen:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LightGreen</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LightGrey" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LightGrey:o1.gui.Color"></a><a id="LightGrey:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LightGrey:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LightGrey</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LightPink" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LightPink:o1.gui.Color"></a><a id="LightPink:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LightPink:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LightPink</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LightSalmon" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LightSalmon:o1.gui.Color"></a><a id="LightSalmon:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LightSalmon:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LightSalmon</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LightSeaGreen" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LightSeaGreen:o1.gui.Color"></a><a id="LightSeaGreen:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LightSeaGreen:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LightSeaGreen</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LightSkyBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LightSkyBlue:o1.gui.Color"></a><a id="LightSkyBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LightSkyBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LightSkyBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LightSlateGray" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LightSlateGray:o1.gui.Color"></a><a id="LightSlateGray:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LightSlateGray:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LightSlateGray</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LightSlateGrey" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LightSlateGrey:o1.gui.Color"></a><a id="LightSlateGrey:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LightSlateGrey:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LightSlateGrey</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LightSteelBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LightSteelBlue:o1.gui.Color"></a><a id="LightSteelBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LightSteelBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LightSteelBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LightYellow" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LightYellow:o1.gui.Color"></a><a id="LightYellow:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LightYellow:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LightYellow</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Lime" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Lime:o1.gui.Color"></a><a id="Lime:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Lime:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Lime</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#LimeGreen" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="LimeGreen:o1.gui.Color"></a><a id="LimeGreen:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#LimeGreen:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">LimeGreen</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Linen" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Linen:o1.gui.Color"></a><a id="Linen:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Linen:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Linen</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Magenta" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Magenta:o1.gui.Color"></a><a id="Magenta:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Magenta:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Magenta</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Maroon" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Maroon:o1.gui.Color"></a><a id="Maroon:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Maroon:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Maroon</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#MediumAquamarine" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MediumAquamarine:o1.gui.Color"></a><a id="MediumAquamarine:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#MediumAquamarine:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MediumAquamarine</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#MediumBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MediumBlue:o1.gui.Color"></a><a id="MediumBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#MediumBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MediumBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#MediumOrchid" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MediumOrchid:o1.gui.Color"></a><a id="MediumOrchid:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#MediumOrchid:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MediumOrchid</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#MediumPurple" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MediumPurple:o1.gui.Color"></a><a id="MediumPurple:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#MediumPurple:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MediumPurple</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#MediumSeaGreen" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MediumSeaGreen:o1.gui.Color"></a><a id="MediumSeaGreen:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#MediumSeaGreen:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MediumSeaGreen</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#MediumSlateBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MediumSlateBlue:o1.gui.Color"></a><a id="MediumSlateBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#MediumSlateBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MediumSlateBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#MediumSpringGreen" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MediumSpringGreen:o1.gui.Color"></a><a id="MediumSpringGreen:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#MediumSpringGreen:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MediumSpringGreen</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#MediumTurquoise" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MediumTurquoise:o1.gui.Color"></a><a id="MediumTurquoise:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#MediumTurquoise:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MediumTurquoise</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#MediumVioletRed" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MediumVioletRed:o1.gui.Color"></a><a id="MediumVioletRed:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#MediumVioletRed:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MediumVioletRed</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#MidnightBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MidnightBlue:o1.gui.Color"></a><a id="MidnightBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#MidnightBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MidnightBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#MintCream" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MintCream:o1.gui.Color"></a><a id="MintCream:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#MintCream:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MintCream</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#MistyRose" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="MistyRose:o1.gui.Color"></a><a id="MistyRose:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#MistyRose:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">MistyRose</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Moccasin" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Moccasin:o1.gui.Color"></a><a id="Moccasin:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Moccasin:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Moccasin</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#NavajoWhite" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NavajoWhite:o1.gui.Color"></a><a id="NavajoWhite:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#NavajoWhite:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NavajoWhite</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Navy" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Navy:o1.gui.Color"></a><a id="Navy:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Navy:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Navy</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#NorwegianBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NorwegianBlue:o1.gui.Color"></a><a id="NorwegianBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#NorwegianBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">NorwegianBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="http://montypython.50webs.com/scripts/Series_1/53.htm" target="_blank">the  MP  standard</a>.</p>
+    </li><li name="o1.gui.colors#OldLace" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OldLace:o1.gui.Color"></a><a id="OldLace:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#OldLace:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">OldLace</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Olive" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Olive:o1.gui.Color"></a><a id="Olive:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Olive:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Olive</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#OliveDrab" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OliveDrab:o1.gui.Color"></a><a id="OliveDrab:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#OliveDrab:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">OliveDrab</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Orange" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Orange:o1.gui.Color"></a><a id="Orange:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Orange:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Orange</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#OrangeRed" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OrangeRed:o1.gui.Color"></a><a id="OrangeRed:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#OrangeRed:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">OrangeRed</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Orchid" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Orchid:o1.gui.Color"></a><a id="Orchid:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Orchid:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Orchid</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#PaleGoldenrod" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PaleGoldenrod:o1.gui.Color"></a><a id="PaleGoldenrod:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#PaleGoldenrod:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PaleGoldenrod</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#PaleGreen" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PaleGreen:o1.gui.Color"></a><a id="PaleGreen:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#PaleGreen:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PaleGreen</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#PaleTurquoise" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PaleTurquoise:o1.gui.Color"></a><a id="PaleTurquoise:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#PaleTurquoise:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PaleTurquoise</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#PaleVioletRed" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PaleVioletRed:o1.gui.Color"></a><a id="PaleVioletRed:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#PaleVioletRed:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PaleVioletRed</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#PapayaWhip" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PapayaWhip:o1.gui.Color"></a><a id="PapayaWhip:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#PapayaWhip:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PapayaWhip</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#PeachPuff" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PeachPuff:o1.gui.Color"></a><a id="PeachPuff:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#PeachPuff:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PeachPuff</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Peru" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Peru:o1.gui.Color"></a><a id="Peru:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Peru:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Peru</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Pink" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Pink:o1.gui.Color"></a><a id="Pink:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Pink:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Pink</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Plum" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Plum:o1.gui.Color"></a><a id="Plum:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Plum:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Plum</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#PowderBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PowderBlue:o1.gui.Color"></a><a id="PowderBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#PowderBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">PowderBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Purple" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Purple:o1.gui.Color"></a><a id="Purple:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Purple:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Purple</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Red" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Red:o1.gui.Color"></a><a id="Red:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Red:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Red</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#RosyBrown" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RosyBrown:o1.gui.Color"></a><a id="RosyBrown:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#RosyBrown:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RosyBrown</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#RoyalBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="RoyalBlue:o1.gui.Color"></a><a id="RoyalBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#RoyalBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">RoyalBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#SaddleBrown" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SaddleBrown:o1.gui.Color"></a><a id="SaddleBrown:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#SaddleBrown:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SaddleBrown</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Salmon" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Salmon:o1.gui.Color"></a><a id="Salmon:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Salmon:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Salmon</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#SandyBrown" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SandyBrown:o1.gui.Color"></a><a id="SandyBrown:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#SandyBrown:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SandyBrown</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#SeaGreen" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SeaGreen:o1.gui.Color"></a><a id="SeaGreen:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#SeaGreen:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SeaGreen</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#SeaShell" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SeaShell:o1.gui.Color"></a><a id="SeaShell:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#SeaShell:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SeaShell</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Sienna" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Sienna:o1.gui.Color"></a><a id="Sienna:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Sienna:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Sienna</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Silver" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Silver:o1.gui.Color"></a><a id="Silver:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Silver:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Silver</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#SkyBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SkyBlue:o1.gui.Color"></a><a id="SkyBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#SkyBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SkyBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#SlateBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SlateBlue:o1.gui.Color"></a><a id="SlateBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#SlateBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SlateBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#SlateGray" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SlateGray:o1.gui.Color"></a><a id="SlateGray:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#SlateGray:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SlateGray</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#SlateGrey" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SlateGrey:o1.gui.Color"></a><a id="SlateGrey:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#SlateGrey:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SlateGrey</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Snow" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Snow:o1.gui.Color"></a><a id="Snow:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Snow:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Snow</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#SpringGreen" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SpringGreen:o1.gui.Color"></a><a id="SpringGreen:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#SpringGreen:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SpringGreen</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#SteelBlue" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SteelBlue:o1.gui.Color"></a><a id="SteelBlue:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#SteelBlue:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SteelBlue</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Tan" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Tan:o1.gui.Color"></a><a id="Tan:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Tan:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Tan</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Teal" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Teal:o1.gui.Color"></a><a id="Teal:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Teal:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Teal</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Thistle" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Thistle:o1.gui.Color"></a><a id="Thistle:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Thistle:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Thistle</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Tomato" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Tomato:o1.gui.Color"></a><a id="Tomato:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Tomato:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Tomato</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Transparent" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Transparent:o1.gui.Color"></a><a id="Transparent:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Transparent:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Transparent</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">Represents a fully transparent (white) color.</p>
+    </li><li name="o1.gui.colors#Turquoise" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Turquoise:o1.gui.Color"></a><a id="Turquoise:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Turquoise:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Turquoise</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Violet" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Violet:o1.gui.Color"></a><a id="Violet:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Violet:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Violet</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Wheat" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Wheat:o1.gui.Color"></a><a id="Wheat:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Wheat:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Wheat</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#White" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="White:o1.gui.Color"></a><a id="White:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#White:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">White</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#White10" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="White10:o1.gui.Color"></a><a id="White10:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#White10:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">White10</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 10% white.</p>
+    </li><li name="o1.gui.colors#White20" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="White20:o1.gui.Color"></a><a id="White20:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#White20:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">White20</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 20% white.</p>
+    </li><li name="o1.gui.colors#White30" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="White30:o1.gui.Color"></a><a id="White30:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#White30:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">White30</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 30% white.</p>
+    </li><li name="o1.gui.colors#White40" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="White40:o1.gui.Color"></a><a id="White40:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#White40:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">White40</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 40% white.</p>
+    </li><li name="o1.gui.colors#White50" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="White50:o1.gui.Color"></a><a id="White50:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#White50:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">White50</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 50% white.</p>
+    </li><li name="o1.gui.colors#White60" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="White60:o1.gui.Color"></a><a id="White60:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#White60:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">White60</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 60% white.</p>
+    </li><li name="o1.gui.colors#White70" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="White70:o1.gui.Color"></a><a id="White70:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#White70:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">White70</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 70% white.</p>
+    </li><li name="o1.gui.colors#White80" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="White80:o1.gui.Color"></a><a id="White80:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#White80:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">White80</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 80% white.</p>
+    </li><li name="o1.gui.colors#White90" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="White90:o1.gui.Color"></a><a id="White90:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#White90:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">White90</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A grayscale color that contains 90% white.</p>
+    </li><li name="o1.gui.colors#WhiteSmoke" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WhiteSmoke:o1.gui.Color"></a><a id="WhiteSmoke:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#WhiteSmoke:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">WhiteSmoke</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#Yellow" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Yellow:o1.gui.Color"></a><a id="Yellow:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#Yellow:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Yellow</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors#YellowGreen" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="YellowGreen:o1.gui.Color"></a><a id="YellowGreen:Color"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#YellowGreen:o1.gui.Color" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">YellowGreen</span><span class="result">: <a href="../Color.html" class="extype" name="o1.gui.Color">Color</a></span>
+      </span>
+      
+      <p class="shortcomment cmt">A named color as per <a href="https://www.w3.org/TR/2016/WD-css-color-4-20160705/" target="_blank">W3C’s list of colors</a>.</p>
+    </li><li name="o1.gui.colors.O_o" visbl="pub" class="indented0 " data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="O_o"></a><a id="O_o:O_o"></a>
+      <span class="permalink">
+      <a href="../../../o1/gui/colors/index.html#O_o" title="Permalink">
+        <i class="material-icons"></i>
+      </a>
+    </span>
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a title="" href="package$$O_o$.html">
+              <span class="name">O_o</span>
+            </a>
+      </span>
+      
+      
+    </li>
+              </ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer"> This document is part of the ebook for O1 (a.k.a. CS-A1110 Programming 1), a course at Aalto University. </div>
+    </body>
+          </div>
+        </div>
+      </div>
+    </body>
+      </html>
